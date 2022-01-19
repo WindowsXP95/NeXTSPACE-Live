@@ -10,10 +10,10 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 - You can login with the live cd/usb with username nextspace and an empty password.
 
 ## Requiremnets for Building
--A dual core processor
--Atleast 4 GB of ram
--A good network connection (for downloading the necessary tools and packages for building)
--Docker Installed Already
+- A dual core processor
+- Atleast 4 GB of ram
+- A good network connection (for downloading the necessary tools and packages for building)
+- Docker Installed Already
 
 
 ## How to Get Started
