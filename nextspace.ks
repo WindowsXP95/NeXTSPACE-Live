@@ -67,7 +67,7 @@ yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusi
 
 yum -y update
 
-yum -y install mpv
+yum -y install mpv screenfetch
 
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/llvm-libs-7.0.1-3.el7.x86_64.rpm
 
