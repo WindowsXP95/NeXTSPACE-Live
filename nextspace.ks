@@ -59,7 +59,7 @@ NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick inkscape gawk pasystray
+yum -y install vim nano indent ImageMagick inkscape gawk pasystray broadcom-wl
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
