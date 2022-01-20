@@ -59,7 +59,7 @@ NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick inkscape gawk pasystray broadcom-wl
+yum -y install vim nano indent ImageMagick gawk pasystray broadcom-wl
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
@@ -68,11 +68,6 @@ yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusi
 yum -y update
 
 yum -y install mpv screenfetch
-
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
-
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
 
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
