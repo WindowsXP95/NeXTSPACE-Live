@@ -69,28 +69,28 @@ yum -y update
 
 yum -y install mpv screenfetch
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/llvm-libs-7.0.1-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/clang-libs-7.0.1-4.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/clang-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/libdispatch-1.3.1121-3.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/libdispatch-devel-1.3.1121-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libdispatch-1.3.1121-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libdispatch-devel-1.3.1121-3.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/libobjc2-2.0-3.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/libobjc2-devel-2.0-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libobjc2-2.0-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libobjc2-devel-2.0-3.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-core-0.95-8.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-core-devel-0.95-8.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-core-0.95-8.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-core-devel-0.95-8.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-gnustep-1.26.0_0.25.0-2.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-gnustep-devel-1.26.0_0.25.0-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-1.26.0_0.25.0-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-devel-1.26.0_0.25.0-2.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-frameworks-0.85-2.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-frameworks-devel-0.85-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-frameworks-0.85-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-frameworks-devel-0.85-2.el7.x86_64.rpm
 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-applications-0.85-3.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.90/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
 
 wget https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/appwrappers.tar.gz
