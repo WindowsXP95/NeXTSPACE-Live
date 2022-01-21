@@ -1,4 +1,6 @@
-# About
+![](https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/wiki-res/application_nib.tiff.gif?raw=true) 
+
+#About
 
 This project aims to make a Nextspace Linux distro by using the now retired nextspace-build-iso scripts by nicktelindert. This project is also currently in beta so except beta quailty for a bit. The system is currently based on CentOS 7 for compatability sake.
 
