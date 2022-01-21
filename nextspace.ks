@@ -57,6 +57,8 @@ NETWORKING=yes
 HOSTNAME=nextspace.local
 NETWORKWAIT=1
 EOF
+
+# NextSpace packages
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 yum -y install vim nano indent ImageMagick gawk pasystray broadcom-wl
@@ -69,7 +71,7 @@ yum -y update
 
 yum -y install mpv screenfetch
 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libwraster-5.0.0-0.el7.x86_64.rp
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
