@@ -61,8 +61,10 @@ EOF
 # NextSpace packages
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick inkscape gawk pasystray broadcom-wl gnustep
+yum -y install vim nano indent ImageMagick inkscape gawk 
 
+yum -y install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
+yum -y install https://download1.rpmfusion.org/nonfree/el/updates/7/x86_64/b/broadcom-wl-6.30.223.271-13.el7.noarch.rpm
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
