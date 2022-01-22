@@ -61,9 +61,14 @@ EOF
 # Extra System Pkgs
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick inkscape gawk 
+yum -y install vim nano indent ImageMagick gawk 
 
-
+yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/Packages/jasper-libs-2.0.14-5.el8.x86_64.rpm
+yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/libicu-50.2-4.el7_7.x86_64.rpm
+yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/gnutls-3.3.29-9.el7_6.x86_64.rpm
+yum -y --nogpgcheck localinstall https://rpms.remirepo.net/enterprise/7/remi/x86_64/libicu69-69.1-1.el7.remi.x86_64.rpm
+yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/libjpeg-turbo-1.2.90-8.el7.x86_64.rpm
+yum -y --nogpgcheck localinstall https://extras.getpagespeed.com/redhat/7/x86_64/RPMS/libpng16-1.6.37-1.el7.x86_64.rpm
 
 yum -y --nogpgcheck localinstall https://download1.rpmfusion.org/nonfree/el/updates/7/x86_64/k/kmod-wl-3.10.0-1062.el7.x86_64-6.30.223.271-32.el7.x86_64.rpm
 yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/glibc-2.17-317.el7.x86_64.rpm
@@ -71,8 +76,6 @@ yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Pac
 yum -y --nogpgcheck localinstall https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/g/gnustep-base-libs-1.28.0-3.el8.x86_64.rpm
 yum -y --nogpgcheck localinstall https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/l/libicns-0.8.1-18.el8.x86_64.rpm
 yum -y --nogpgcheck localinstall https://rpms.remirepo.net/enterprise/7/remi/x86_64/libicu69-69.1-1.el7.remi.x86_64.rpm
-yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/libjpeg-turbo-1.2.90-8.el7.x86_64.rpm
-yum -y --nogpgcheck localinstall https://extras.getpagespeed.com/redhat/7/x86_64/RPMS/libpng16-1.6.37-1.el7.x86_64.rpm
 yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/libtiff-4.0.3-35.el7.x86_64.rpm
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
 
@@ -82,7 +85,7 @@ yum -y --nogpgcheck localinstall https://dl.fedoraproject.org/pub/epel/epel-rele
 
 yum -y update
 
-yum -y install mpv screenfetch
+yum -y install vlc screenfetch
 
 # NextSpace packages
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
