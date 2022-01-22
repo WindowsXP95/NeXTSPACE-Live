@@ -63,9 +63,7 @@ yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 yum -y install vim nano indent ImageMagick inkscape gawk 
 
-yum -y --nogpgcheck localinstall https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
-yum -y --nogpgcheck localinstall https://download1.rpmfusion.org/nonfree/el/updates/7/x86_64/b/broadcom-wl-6.30.223.271-13.el7.noarch.rpm
-yum -y --nogpgcheck localinstall https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
 
 yum -y --nogpgcheck localinstall https://download1.rpmfusion.org/nonfree/el/updates/7/x86_64/k/kmod-wl-3.10.0-1062.el7.x86_64-6.30.223.271-32.el7.x86_64.rpm
 yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/glibc-2.17-317.el7.x86_64.rpm
@@ -77,6 +75,7 @@ yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Pac
 yum -y --nogpgcheck localinstall https://extras.getpagespeed.com/redhat/7/x86_64/RPMS/libpng16-1.6.37-1.el7.x86_64.rpm
 yum -y --nogpgcheck localinstall http://mirror.centos.org/centos/7/os/x86_64/Packages/libtiff-4.0.3-35.el7.x86_64.rpm
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+
 
 yum -y update
 
