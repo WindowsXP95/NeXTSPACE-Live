@@ -6,4 +6,6 @@ docker exec -w / -it nextspace-dev git clone https://github.com/WindowsXP95/NeXT
 docker exec -w /NeXTSPACE-Live -it nextspace-dev sh build.sh
 docker cp nextspace-dev:/NeXTSPACE-Live/NEXTSPACEOS.iso ~/NEXTSPACEOS.iso
 docker stop nextspace-dev
-docker container rm nextspace-dev
+
+Temp
+#docker container rm nextspace-dev
