@@ -48,19 +48,20 @@ passwd -d root > /dev/null
 
 # /etc/hosts
 cat << EOF > ${fsdir}/etc/hosts
-127.0.0.1	localhost localhost.localdomain nextspace.local
+127.0.0.1	localhost localhost.localdomain nextspaceos.local
 EOF
 
 # hostname
 cat << EOF > /etc/sysconfig/network
 NETWORKING=yes
-HOSTNAME=nextspace.local
+HOSTNAME=nextspaceos.local
 NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick inkscape gawk pasystray
+yum -y install vim nano indent ImageMagick gawk gnustep-base-libs
 
+yum -y install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-0.25.1-4.1.x86_64.rpm
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
