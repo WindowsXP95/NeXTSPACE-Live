@@ -59,7 +59,9 @@ NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick gawk gnustep-base-libs
+yum -y install vim nano indent ImageMagick gawk gnustep-base-libs libpng16 
+
+yum -y install http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/giflib-5.1.4-3.el8.x86_64.rpm
 
 yum -y install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
 yum -y install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-0.25.1-4.1.x86_64.rpm
