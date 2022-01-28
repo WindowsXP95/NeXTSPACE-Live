@@ -13,14 +13,18 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 ## Logging in
 - You can login with the live cd/usb with username "nextspace" and an empty password.
 
-## Requiremnets for Building
+## Requirements for Building
 - A dual core processor
 - Atleast 4 GB of ram
 - A good network connection (for downloading the necessary tools and packages for building)
 - Docker Installed Already
+- Linux or macOS [(Check Here fo more info)](https://github.com/WindowsXP95/NeXTSPACE-Live/wiki/Building-and-Compatibility)
 
 ## How to Get Started
-Run create.sh in the Docker/centos7 folder(install docker first) the image will be placed in the root of your home folder. It should be named "NEXTSPACE.iso"
+Run create.sh in the Docker/centos7 folder(install docker first) the image will be placed in the root of your home folder. It should be named "NEXTSPACEOS.iso"
+
+For Linux: check /home/username/ or /root
+For macOS: chek your /Users/username/
 
 [GO TO THE NEXTSPACE GITHUB PAGE](https://www.github.com/trunkmaster/nextspace) credits to Trunkmaster and nicktelindert for the orignal scripts
 
