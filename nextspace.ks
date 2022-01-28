@@ -67,7 +67,7 @@ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarc
 
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
 
-yum -y update
+yum -y update https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
 
 yum -y install mpv screenfetch
 
