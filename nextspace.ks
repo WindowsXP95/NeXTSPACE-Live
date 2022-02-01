@@ -48,48 +48,53 @@ passwd -d root > /dev/null
 
 # /etc/hosts
 cat << EOF > ${fsdir}/etc/hosts
-127.0.0.1	localhost localhost.localdomain nextspaceos.local
+127.0.0.1	localhost localhost.localdomain nextspace.local
 EOF
 
 # hostname
 cat << EOF > /etc/sysconfig/network
 NETWORKING=yes
-HOSTNAME=nextspaceos.local
+HOSTNAME=nextspace.local
 NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-yum -y install vim nano indent ImageMagick gawk gnustep-base-libs libpng16 xterm
+yum -y install vim nano indent ImageMagick inkscape gawk pasystray
 
-yum -y install http://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/libicu-67.1-9.el9.x86_64.rpm
-
-yum -y --skip-broken install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
-yum -y --skip-broken install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-0.25.1-4.1.x86_64.rpm
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
 
-yum -y update https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
+yum -y update
 
-yum -y install mpv screenfetch
+yum -y install VirtualBox VirtualBox-guest-additions dia mpv transmission
 
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
 
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libdispatch-1.3.1121-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libdispatch-devel-1.3.1121-3.el7.x86_64.rpm
 
-wget https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/appwrappers.tar.gz
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libobjc2-2.0-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/libobjc2-devel-2.0-3.el7.x86_64.rpm
+
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-core-0.95-8.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-core-devel-0.95-8.el7.x86_64.rpm
+
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-1.26.0_0.25.0-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-devel-1.26.0_0.25.0-2.el7.x86_64.rpm
+
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-frameworks-0.85-2.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-frameworks-devel-0.85-2.el7.x86_64.rpm
+
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
+
+
+wget 
 tar xvf appwrappers.tar.gz -C /
-
-
 
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
@@ -101,6 +106,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 /sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
 /sbin/groupadd storage
