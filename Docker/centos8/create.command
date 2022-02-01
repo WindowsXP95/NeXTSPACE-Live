@@ -1,4 +1,5 @@
-#!/bin/bash
+# 2022 The NextSpace OS Project
+#!/bin/zsh
 docker build -t nextspace-dev .
 docker create  -v /dev:/dev --privileged=true -ti  --name nextspace-dev nextspace-dev:latest
 docker start nextspace-dev
