@@ -3,7 +3,7 @@ docker build -t nextspaceos-dev .
 docker create  -v /dev:/dev --privileged=true -ti  --name nextspaceos-dev nextspaceos-dev:latest
 docker start nextspaceos-dev
 docker exec -w / -it nextspaceos-dev git clone https://github.com/WindowsXP95/NeXTSPACE-Live.git
-docker exec -w /NeXTSPACE-Live -it nextspace-dev sh build_v2.sh
+docker exec -w /NeXTSPACE-Live -it nextspaceos-dev sh build_v2.sh
 echo " Finished Building iso. Now copying..."
 docker cp nextspaceos-dev:/NeXTSPACE-Live/NEXTSPACEOS_v2.iso ~/NEXTSPACEOS_v2.iso
 docker stop nextspaceos-dev
