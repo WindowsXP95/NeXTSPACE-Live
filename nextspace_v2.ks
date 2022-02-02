@@ -6,7 +6,7 @@ auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext root
 #repo --name=centos-8 --mirrorlist=http://mirrorlist.centos.org/?release=8&repo=os&arch=x86_64
-repo --name=centos-8 --mirrorlist=http://vault.centos.org
+repo --name=centos-8 --mirrorlist=http://mirror.linux.ncsu.edu/centos/
 
 %packages
 @core
