@@ -79,13 +79,14 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/l
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/NS/centos8/NSUser/libart_lgpl-2.3.21-23.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/NS/centos8/NSUser/libdispatch-5.1.5-0.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/libobjc2-2.0-4.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/libwraster-5.0.0-0.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/nextspace-applications-0.90-0.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/nextspace-core-0.95-10.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/nextspace-frameworks-0.90-2.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/NS/centos8/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el8.x86_64.rpm
 
 wget https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
