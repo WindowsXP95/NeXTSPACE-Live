@@ -14,8 +14,8 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 - You can login with the live cd/usb with username "nextspace" and an empty password.
 
 ## Requirements for Building
-- A dual core processor
-- Atleast 4 GB of ram
+- At least dual core processor
+- A minimum of 4 GB of ram
 - A good network connection (for downloading the necessary tools and packages for building)
 - Docker Installed Already
 - Linux or macOS [(Check Here fo more info)](https://github.com/WindowsXP95/NeXTSPACE-Live/wiki/Building-and-Compatibility)
@@ -41,3 +41,6 @@ Make a new RedHat Linux based VM, you can call it anything you want. Give it abo
 
 You really need KVM to get decent performance
 You can also run it inside of VirtualBox
+
+## More Info
+More info can be found inside of the wiki (which is under construction)
