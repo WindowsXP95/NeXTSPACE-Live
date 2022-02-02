@@ -92,7 +92,6 @@ wget https://github.com/WindowsXP95/NeXTSPACE-Live/raw/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
 
 
-
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
 /usr/sbin/plymouth-set-default-theme nextspace -R
