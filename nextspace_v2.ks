@@ -66,9 +66,9 @@ yum -y install http://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Package
 
 yum -y --skip-broken install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
 yum -y --skip-broken install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-0.25.1-4.1.x86_64.rpm
-yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 
-yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm
 
 yum -y update https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
 
