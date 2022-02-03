@@ -13,7 +13,6 @@ repo --name=powertools --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/
 
 %packages
 @core
-x11
 kernel-devel
 wget
 git
@@ -64,7 +63,7 @@ EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
 
 yum -y install vim nano indent ImageMagick gawk gnustep-base-libs libpng16 xterm
-
+yum install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
 yum -y install http://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/libicu-67.1-9.el9.x86_64.rpm
 
 yum -y --skip-broken install https://raw.githubusercontent.com/rpmsphere/x86_64/master/g/gnustep-gui-libs-0.25.1-4.1.x86_64.rpm
