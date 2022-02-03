@@ -9,6 +9,7 @@ repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=o
 
 %packages
 @core
+@x11
 kernel-devel
 wget
 git
@@ -57,7 +58,8 @@ HOSTNAME=nextspace.local
 NETWORKWAIT=1
 EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps -y
+
+
 yum -y install vim nano indent ImageMagick inkscape gawk pasystray
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
