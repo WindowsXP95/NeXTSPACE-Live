@@ -13,7 +13,7 @@ repo --name=powertools --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/
 
 %packages
 @core
-@x11
+x11
 kernel-devel
 wget
 git
