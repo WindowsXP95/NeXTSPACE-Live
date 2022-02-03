@@ -1,3 +1,7 @@
+# 2020 nicktelindert
+# 2022 The NextSpaceOS Project (WindowsXP95)
+# NextSpaceOS kickstart file
+
 lang en_US.UTF-8
 firewall --disabled
 keyboard us
@@ -67,7 +71,7 @@ sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
-
+# Extra packages and repos
 yum -y install vim nano indent ImageMagick inkscape gawk pasystray screenfetch
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -78,6 +82,7 @@ yum -y update
 
 yum -y install VirtualBox VirtualBox-guest-additions dia mpv transmission
 
+# NextSpace Packages (0.85)
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
 
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
@@ -101,24 +106,23 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
-
+# App wrappers
 wget https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
 
+# Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
 /usr/sbin/plymouth-set-default-theme nextspace -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
+# Saving this for the future
 #cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_8.tgz
 #tar zxf NextSpace-0.90-CentOS_8.tgz
 #cd NextSpace-0.90
 #./nextspace-install.sh
 
-
 yum -y remove tboot
-
-
 
 touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
