@@ -64,11 +64,6 @@ HOSTNAME=nextspace.local
 NETWORKWAIT=1
 EOF
 
-# Kernel (experimental)
-sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
-sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
-
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 # Extra packages and repos
@@ -107,7 +102,10 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
 
-
+# Kernel (experimental)
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 
 # App wrappers
