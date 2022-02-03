@@ -9,6 +9,7 @@ repo --name=centos-AppStream --baseurl=http://mirror.nsc.liu.se/centos-store/cen
 repo --name=centos-baseos --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/BaseOS/x86_64/os/
 repo --name=centos-extras --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/extras/x86_64/os/
 repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el8/x86_64/
+repo --name=powertools --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/PowerTools/x86_64/os/
 
 %packages
 @core
