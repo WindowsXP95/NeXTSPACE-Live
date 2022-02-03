@@ -5,8 +5,10 @@ timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext root
-repo --name=centos-store --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/AppStream/x86_64/os/
-repo --name=centos-store2 --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/BaseOS/x86_64/os/
+repo --name=centos-AppStream --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/AppStream/x86_64/os/
+repo --name=centos-baseos --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/BaseOS/x86_64/os/
+repo --name=centos-extras --baseurl=http://mirror.nsc.liu.se/centos-store/centos/8/extras/x86_64/os/
+repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el8/x86_64/
 
 %packages
 @core
