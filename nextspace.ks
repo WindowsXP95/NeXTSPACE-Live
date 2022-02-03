@@ -6,7 +6,7 @@ auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext root
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-
+repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el7/x86_64/
 
 
 %packages
@@ -61,9 +61,7 @@ NETWORKWAIT=1
 EOF
 # Kernel (experimental)
 
-sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
-sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-sudo yum --enablerepo=elrepo-kernel install kernel-ml
+sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
 
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
