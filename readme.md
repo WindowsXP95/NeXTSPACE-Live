@@ -3,12 +3,13 @@
 
 
 
-This project aims to make a Nextspace Linux distro by using the now retired nextspace-build-iso scripts by nicktelindert. This project is also currently in beta so except beta quailty for a bit. The system is currently based on CentOS 7 for compatability sake. A Cent OS 8 version is currently in the makes.
+This project aims to make a Nextspace Linux distro by using the now retired nextspace-build-iso scripts by nicktelindert. This project is also currently in beta so except beta quailty for a bit. The system is currently based on CentOS 7 for compatability sake.
 
 
 ## Known issues
 - No gui networking tools
 - No decision made on base applications yet.
+- Weird mount error on startup when first booting (Live mode only)
 
 ## Logging in
 - You can login with the live cd/usb with username "nextspace" and an empty password.

@@ -106,9 +106,18 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
+
+
+
+
 # App wrappers
-wget https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/appwrappers.tar.gz
+
+wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
+
+
+#wget https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/appwrappers.tar.gz
+#tar xvf appwrappers.tar.gz -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
