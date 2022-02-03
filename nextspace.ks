@@ -67,7 +67,7 @@ EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 # Extra packages and repos
-yum -y install vim nano indent ImageMagick inkscape gawk pasystray screenfetch
+yum -y install vim nano indent ImageMagick gawk pasystray screenfetch
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
