@@ -5,7 +5,7 @@ timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext root
-repo --name=centos-8 --mirrorlist=http://vault.centos.org/8.5.2111/
+repo --name=centos-store --baseurl=http://mirror.nsc.liu.se/centos-store/
 
 
 %packages
