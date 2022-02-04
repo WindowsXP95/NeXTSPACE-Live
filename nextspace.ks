@@ -16,14 +16,13 @@ repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el7/x86_64/
 %packages
 @core
 @x11
-kernel-devel
 wget
 git
 anaconda
 @anaconda-tools
 pulseaudio
 alsa-plugins-pulseaudio
-kernel
+kernel-ml
 plymouth
 grub2-efi-modules
 efibootmgr
