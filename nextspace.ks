@@ -22,7 +22,6 @@ anaconda
 @anaconda-tools
 pulseaudio
 alsa-plugins-pulseaudio
-kernel-ml
 plymouth
 grub2-efi-modules
 efibootmgr
