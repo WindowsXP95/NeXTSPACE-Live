@@ -104,7 +104,9 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
-
+sudo grub2-set-default 0
+yum -y install yum-utils
+package-cleanup --oldkernels
 
 # App wrappers
 
@@ -138,4 +140,5 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 /sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
 /sbin/groupadd storage
 passwd -d nextspace > /dev/null
+chmod +x /etc/rc.d/rc.local
 %end
