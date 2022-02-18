@@ -62,6 +62,7 @@ HOSTNAME=nextspace.local
 NETWORKWAIT=1
 EOF
 
+# Remi Repo
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 # Extra packages and repos
@@ -113,8 +114,8 @@ package-cleanup --oldkernels
 wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
 
-
-#wget https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/appwrappers.tar.gz
+# WIP
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/appwrappers.tar.gz
 #tar xvf appwrappers.tar.gz -C /
 
 # Finishing touches
