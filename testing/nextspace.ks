@@ -134,6 +134,8 @@ ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/s
 
 yum -y remove tboot
 
+echo 'Completed Building, copying ISO to your Home Directory'
+
 touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
