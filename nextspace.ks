@@ -52,13 +52,13 @@ passwd -d root > /dev/null
 
 # /etc/hosts
 cat << EOF > ${fsdir}/etc/hosts
-127.0.0.1	localhost localhost.localdomain nextspace.local
+127.0.0.1	localhost localhost.localdomain nextspaceos.local
 EOF
 
 # hostname
 cat << EOF > /etc/sysconfig/network
 NETWORKING=yes
-HOSTNAME=nextspace.local
+HOSTNAME=nextspaceos.local
 NETWORKWAIT=1
 EOF
 
