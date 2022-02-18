@@ -125,10 +125,10 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 # Saving this for the future
-#cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_8.tgz
-#tar zxf NextSpace-0.90-CentOS_8.tgz
-#cd NextSpace-0.90
-#./nextspace-install.sh
+cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_7.tgz
+tar zxf NextSpace-0.90-CentOS_7.tgz
+cd NextSpace-0.90
+./nextspace-install.sh
 
 yum -y remove tboot
 
