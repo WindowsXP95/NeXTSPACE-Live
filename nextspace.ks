@@ -109,6 +109,8 @@ sudo grub2-set-default 0
 yum -y install yum-utils
 package-cleanup --oldkernels
 
+yum -y remove kernel
+
 # App wrappers
 
 wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
