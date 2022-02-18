@@ -22,23 +22,23 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 - Linux or macOS [(Check Here fo more info)](https://github.com/WindowsXP95/NeXTSPACE-Live/wiki/Building-and-Compatibility)
 
 ## How to Get Started
-To build v1 of NextSpace OS, Run create.sh in the Docker/centos7 folder(install docker first) the image will be placed in the root of your home folder. It should be named "NEXTSPACEOS.iso"
+To build v1 of NextSpace OS, Run create.sh in the Docker/nextspaceos folder (install Docker first) the image will be placed in the root of your home folder. It should be named "NEXTSPACEOS.iso"
 
-To build v2 Beta of the of NextSpace OS (based on Cent OS 8), Run create.sh in the Docker/centos8 folder.
+Update: Nextspace will be based on CentOS 7 ONLY. This is due to it still being supported untill 2024. Plus its more easier to config and work on. Ive tried to work with the Cent OS 8 scripts but to no success. You could possibly make a CentOS 8 version if you know what your doing.
 
 
-For Linux: check /home/username/ or /root
+For Linux: check /home/username/ or /root (can only be accessed vis SuperUser on most distros)
 For macOS: chek your /Users/username/
 
 [Learn more about Nextspace](https://www.github.com/trunkmaster/nextspace) credits to Trunkmaster and nicktelindert for the orignal scripts
 
 ## Run it in QEMU
 
-qemu-system-x86_64 -enable-kvm -m 1G -cdrom NEXTSPACE.iso
+qemu-system-x86_64 -enable-kvm -m 1G -cdrom NEXTSPACEOS.iso
 
 ## Run it in VBox
 
-Make a new RedHat Linux based VM, you can call it anything you want. Give it about 1 GB of ram and at least 8 GB of HD space if you plan to install it.
+Make a new RedHat Linux based VM, you can call it anything you want. Give it about 1 GB of ram and at least 12 GB of HD space if you plan to install it.
 
 You really need KVM to get decent performance
 You can also run it inside of VirtualBox
