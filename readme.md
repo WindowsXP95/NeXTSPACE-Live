@@ -2,12 +2,11 @@
 # About 
 
 
-
-This project aims to make a Nextspace Linux distro by using the now retired nextspace-build-iso scripts by nicktelindert. This project is also currently in beta so except beta quailty for a bit. The system is currently based on CentOS 7 for compatability sake.
+This project aims to make a Nextspace Linux distro by using the now retired nextspace-build-iso scripts by nicktelindert. This project is also currently in beta so except beta quailty for a bit. The system is currently based on CentOS 7 and uses The NextSpace DE v0.85.
 
 
 ## Known issues
-- No gui networking tools
+- No GUI networking tools
 - No decision made on base applications yet.
 - Weird mount error on startup when first booting (Live mode only)
 
@@ -30,7 +29,7 @@ Update: NextSpaceOS will be based on CentOS 7 ONLY. This is due to it still bein
 For Linux: check /home/username/ or /root (can only be accessed via SuperUser on most distros)
 For macOS: chek your /Users/username/
 
-[Learn more about Nextspace](https://www.github.com/trunkmaster/nextspace) credits to Trunkmaster and nicktelindert for the orignal scripts
+[Learn more about NextSpace](https://www.github.com/trunkmaster/nextspace) credits to Trunkmaster and nicktelindert for the orignal scripts
 
 ## Run it in QEMU
 
