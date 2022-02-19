@@ -17,7 +17,8 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 - At least dual core processor
 - A minimum of 4 GB of ram
 - A good network connection (for downloading the necessary tools and packages for building)
-- Docker Installed Already
+- Docker already installed
+- Any Terminal App
 - Linux or macOS [(Check Here fo more info)](https://github.com/WindowsXP95/NeXTSPACE-Live/wiki/Building-and-Compatibility)
 
 ## How to Get Started
