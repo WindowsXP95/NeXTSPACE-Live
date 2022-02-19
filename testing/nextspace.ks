@@ -116,6 +116,11 @@ yum -y remove kernel kernel-debug
 wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
 tar xvf appwrappers.tar.gz -C /
 
+# Plymouth theme
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/themes.tar
+rm -d /usr/share/plymouth/themes
+tar xvf themes.tar -C /usr/share/plymouth
+
 # WIP
 #wget https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/appwrappers.tar.gz
 #tar xvf appwrappers.tar.gz -C /
