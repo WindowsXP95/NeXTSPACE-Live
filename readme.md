@@ -1,4 +1,4 @@
-![](https://github.com/WindowsXP95/NeXTSPACE-Live/blob/master/wiki-res/application_nib.tiff.gif?raw=true)
+![](https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/wiki-res/icons/user-home.png)
 # About 
 
 
