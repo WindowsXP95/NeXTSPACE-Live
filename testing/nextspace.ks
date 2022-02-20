@@ -8,9 +8,8 @@ keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
-rootpw --plaintext root
+rootpw --plaintext nextspaceos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-
 repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel/7/x86_64/
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
@@ -118,9 +117,6 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 # EULA Flag
 eula --agreed
 
-# Root Password
-rootpw nextspaceos
-
 # App wrappers
 
 wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
@@ -142,8 +138,8 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 # Saving this for the future
-#cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_7.tgz
-#tar zxf NextSpace-0.90-CentOS_7.tgz
+#cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_8.tgz
+#tar zxf NextSpace-0.90-CentOS_8.tgz
 #cd NextSpace-0.90
 #./nextspace-install.sh
 
@@ -156,6 +152,11 @@ chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+
+# Sudo fix
+adduser nextspace sudo
+adduser username admin
+chmod  0440  /etc/sudoers
 
 /sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
 /sbin/groupadd storage
