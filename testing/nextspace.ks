@@ -1,13 +1,15 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
+#version=1.1.0b
 
 lang en_US.UTF-8
 firewall --disabled
 keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
-selinux --disabled
+firstboot --disabled
+eula --agreedselinux --disabled
 rootpw --plaintext nextspaceos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
 repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel/7/x86_64/
@@ -129,10 +131,6 @@ yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
 
-
-
-# EULA Flag
-eula --agreed
 
 # NextSpace OS Plymouth theme
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/themes.tar
