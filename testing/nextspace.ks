@@ -10,14 +10,24 @@ auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext root
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el7/x86_64/
+
+repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel/7/x86_64/
+repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
+repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
+repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
 
 
 %packages
 @core
 @x11
+kernel-ml
+kernel-ml-devel
+kernel-ml-tools
+kernel-ml-tools-libs
+kernel-ml-headers
 wget
 git
+sudo
 anaconda
 @anaconda-tools
 pulseaudio
@@ -100,17 +110,11 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
-
-# Kernel (experimental)
-sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
-sudo rpm -Uvh https://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-sudo yum --enablerepo=elrepo-kernel install kernel-ml -y
-sudo grub2-set-default 0
-yum -y install yum-utils
-package-cleanup --oldkernels
-
 # EULA Flag
 eula --agreed
+
+# Root Password
+rootpw nextspaceos
 
 # App wrappers
 
