@@ -117,18 +117,12 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 # EULA Flag
 eula --agreed
 
-# App wrappers
-
-wget https://raw.githubusercontent.com/nicktelindert/nextspace-build-iso/master/appwrappers.tar.gz
-tar xvf appwrappers.tar.gz -C /
-
-# Plymouth theme
+# NextSpace OS Plymouth theme
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/themes.tar
-rm -d /usr/share/plymouth/themes
 tar xvf themes.tar -C /usr/share/plymouth
 
-# WIP
-#wget 
+# App Wrappers
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
 #tar xvf appwrappers.tar -C /
 
 # Finishing touches
@@ -137,7 +131,7 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 /usr/sbin/plymouth-set-default-theme nextspaceos -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
-# Saving this for the future
+# Saving this for the future 
 #cd / & wget https://github.com/trunkmaster/nextspace/releases/download/0.90/NextSpace-0.90-CentOS_8.tgz
 #tar zxf NextSpace-0.90-CentOS_8.tgz
 #cd NextSpace-0.90
