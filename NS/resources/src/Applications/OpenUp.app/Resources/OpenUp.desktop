@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Categories=X-GNUstep;
+Name=OpenUp
+Comment=No description avaliable!
+Icon=/Applications/OpenUp.app/Resources/application.tiff
+Exec=/usr/NextSpace/bin/openapp OpenUp
+MimeType=

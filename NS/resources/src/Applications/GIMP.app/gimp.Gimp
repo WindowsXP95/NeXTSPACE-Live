@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#FILE=`echo $2|grep \.dia`
+COMMAND="gimp"
+
+if [ "$2" != "" ];
+then
+    echo "Executing gimp with argument $2"
+    exec ${COMMAND} "$2"
+else
+    echo "Executing gimp"
+    exec ${COMMAND}
+fi

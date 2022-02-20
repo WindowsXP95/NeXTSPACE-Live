@@ -1,0 +1,32 @@
+{
+    ApplicationRelease = "2.8.10";
+    NSExecutable = "gimp.Gimp";
+    NSRole = "Editor";
+    NSIcon = "GIMP.png";
+    NSTypes = (
+	{
+	    NSIcon = "GenericImage.tiff";
+	    NSUnixExtensions = (xcf);
+	},
+	{
+	    NSIcon = "JPEGImage.tiff";
+	    NSUnixExtensions = (jpg,jpeg);
+	},
+	{
+	    NSIcon = "TIFFImage.tiff";
+	    NSUnixExtensions = (tif,tiff);
+	},
+	{
+	    NSIcon = "PNGImage.tiff";
+	    NSUnixExtensions = (png);
+	},
+	{
+	    NSIcon = "GIFImage.tiff";
+	    NSUnixExtensions = (gif);
+	},
+	{
+	    NSIcon = "XPMImage.tiff";
+	    NSUnixExtensions = (xpm);
+	}
+    );
+}

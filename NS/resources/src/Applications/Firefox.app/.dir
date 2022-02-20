@@ -1,0 +1,13 @@
+{
+    ShelfContents = {
+	(
+	    <*I0>,
+	    <*I0>
+	) = (
+	    "/Users/me/Applications/Firefox.app"
+	);
+    };
+    ShelfSize = <*I76>;
+    ViewerPath = "/Firefox.png";
+    ViewerWindow = "{x = 472; y = 121; width = 560; height = 423}";
+}

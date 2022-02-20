@@ -1,0 +1,13 @@
+{
+    ShelfContents = {
+	(
+	    <*I0>,
+	    <*I0>
+	) = (
+	    "/Users/me/Applications/GIMP.app"
+	);
+    };
+    ShelfSize = <*I76>;
+    ViewerPath = "/GIMP.png";
+    ViewerWindow = "{x = 359; y = 301; width = 560; height = 423}";
+}

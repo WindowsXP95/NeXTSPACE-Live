@@ -1,0 +1,11 @@
+{
+  NSExecutable = "gl.mpv";
+  NSRole = "Viewer";
+  NSIcon = "NEXTIMEapp.tiff";
+  NSTypes = (
+    {
+      NSUnixExtensions = ( avi,mpeg,mpg,dat,wmv,mov,mkv,ts );
+      NSIcon = "MovieFile.tiff";
+    }
+  );
+}

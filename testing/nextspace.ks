@@ -45,7 +45,6 @@ syslinux
 firefox
 emacs
 gimp
-generic-logos
 network-manager-applet
 -kernel
 -kernel-devel
@@ -134,6 +133,7 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 /usr/sbin/plymouth-set-default-theme nextspaceos -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
+rm -d /usr/share/plymouth/themes/charge/
 
 yum -y remove tboot
 

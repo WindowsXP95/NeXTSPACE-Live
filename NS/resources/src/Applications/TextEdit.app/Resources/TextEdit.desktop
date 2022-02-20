@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Categories=X-GNUstep;
+Name=TextEdit
+Comment=an OpenStep text editor
+Icon=/Applications/TextEdit.app/Resources/Edit.tiff
+Exec=/usr/NextSpace/bin/openapp TextEdit

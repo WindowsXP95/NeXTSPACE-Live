@@ -1,0 +1,11 @@
+{
+    ApplicationDescription = "CPU time usage monitor";
+    ApplicationRelease = "4.2";
+    Copyright = "Copyright \U00A9 1993-1997 Scott Hess  All Rights Reserved.";
+    GSMainMarkupFile = "";
+    NOTE = "Automatically generated, do not edit!";
+    NSExecutable = TimeMon;
+    NSIcon = "TM-app.tiff";
+    NSMainNibFile = TimeMon;
+    NSPrincipalClass = NSApplication;
+}

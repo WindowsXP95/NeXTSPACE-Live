@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Categories=X-GNUstep;
+Name=GSPdf
+Comment=PDF-PS viewer
+Icon=/Applications/GSPdf.app/Resources/GSPdf.tiff
+Exec=/usr/NextSpace/bin/openapp GSPdf
+MimeType=
