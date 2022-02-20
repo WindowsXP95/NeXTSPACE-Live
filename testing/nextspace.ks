@@ -131,9 +131,9 @@ yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
 
@@ -155,7 +155,7 @@ ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/s
 
 rm -d /usr/share/plymouth/themes/charge/
 
-yum -y remove tboot
+yum -y remove tboot adwaita-cursor-theme adwaita-icon-theme
 
 echo 'Completed Building, preparing to make ISO...'
 
