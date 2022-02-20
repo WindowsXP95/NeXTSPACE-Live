@@ -145,10 +145,11 @@ echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
-# Sudo fix
-usermod -aG wheel nextspace
 
-/sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
+# User Configs
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel nextspace
+#passwd $USERNAME
+
 /sbin/groupadd storage
 passwd -d nextspace > /dev/null
 chmod +x /etc/rc.d/rc.local
