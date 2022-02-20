@@ -131,7 +131,7 @@ yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
 
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
 
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-1.26.0_0.25.0-2.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-gnustep-devel-1.26.0_0.25.0-2.el7.x86_64.rpm
