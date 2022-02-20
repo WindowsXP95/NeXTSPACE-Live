@@ -27,6 +27,8 @@ kernel-ml-headers
 wget
 git
 sudo
+cups-libs
+cups-pk-helper
 anaconda
 @anaconda-tools
 pulseaudio
@@ -49,6 +51,7 @@ network-manager-applet
 -kernel-tools-libs
 -kernel-tools
 -kernel-headers
+-centos-logos
 %end
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
@@ -139,7 +142,7 @@ ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/s
 
 yum -y remove tboot
 
-echo 'Completed Building, copying ISO to your Home Directory'
+echo 'Completed Building, making ISO'
 
 touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
