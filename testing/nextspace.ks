@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b
+# version=1.1.0b_r2
 
 lang en_US.UTF-8
 firewall --disabled
@@ -171,7 +171,7 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
-/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel nextspace
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel nextspaceos
 #passwd $USERNAME
 
 /sbin/groupadd storage
