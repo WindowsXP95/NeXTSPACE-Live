@@ -9,7 +9,8 @@ keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
 firstboot --disabled
-eula --agreedselinux --disabled
+eula --agreed
+selinux --disabled
 rootpw --plaintext nextspaceos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
 repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel/7/x86_64/
