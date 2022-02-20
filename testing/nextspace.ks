@@ -45,13 +45,13 @@ syslinux
 firefox
 emacs
 gimp
+generic-logos
 network-manager-applet
 -kernel
 -kernel-devel
 -kernel-tools-libs
 -kernel-tools
 -kernel-headers
--centos-logos
 %end
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
