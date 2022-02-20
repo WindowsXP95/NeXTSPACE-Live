@@ -109,7 +109,8 @@ sudo grub2-set-default 0
 yum -y install yum-utils
 package-cleanup --oldkernels
 
-yum -y remove kernel kernel-debug
+# EULA Flag
+eula --agreed
 
 # App wrappers
 
