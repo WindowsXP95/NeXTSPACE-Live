@@ -122,8 +122,8 @@ wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/themes.
 tar xvf themes.tar -C /usr/share/plymouth
 
 # App Wrappers
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
-#tar xvf appwrappers.tar -C /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
+tar xvf appwrappers.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
