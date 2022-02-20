@@ -45,6 +45,11 @@ firefox
 emacs
 gimp
 network-manager-applet
+-kernel
+-kernel-devel
+-kernel-tools-libs
+-kernel-tools
+-kernel-headers
 %end
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
