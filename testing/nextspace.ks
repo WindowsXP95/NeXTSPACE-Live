@@ -128,13 +128,13 @@ rm -d /usr/share/plymouth/themes
 tar xvf themes.tar -C /usr/share/plymouth
 
 # WIP
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/appwrappers.tar.gz
-#tar xvf appwrappers.tar.gz -C /
+#wget 
+#tar xvf appwrappers.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
-/usr/sbin/plymouth-set-default-theme nextspace -R
+/usr/sbin/plymouth-set-default-theme nextspaceos -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 # Saving this for the future
@@ -154,9 +154,7 @@ echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # Sudo fix
-adduser nextspace sudo
-adduser username admin
-chmod  0440  /etc/sudoers
+usermod -aG wheel nextspace
 
 /sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
 /sbin/groupadd storage
