@@ -6,4 +6,4 @@ docker exec -w / -it nextspace-testing git clone https://github.com/WindowsXP95/
 docker exec -w /NeXTSPACE-OS -it nextspace-testing sh /NeXTSPACE-OS/testing/build_testing.sh
 docker cp nextspace-testing:/NeXTSPACE-OS/NEXTSPACEOS_testbuild.iso ~/nextspaceos_testbuild-$(date +"%Y%m%d").iso
 docker stop nextspace-testing
-docker container rm nextspace-testing
+#docker container rm nextspace-testing

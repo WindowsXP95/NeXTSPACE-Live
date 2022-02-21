@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r2
+# version=1.1.0b_r3
 
 lang en_US.UTF-8
 firewall --disabled
@@ -127,31 +127,31 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/c
 
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libdispatch-debuginfo-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libdispatch-devel-5.1.5-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libdispatch-debuginfo-5.1.5-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libdispatch-devel-5.1.5-0.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libobjc2-debuginfo-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libobjc2-devel-2.0-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libobjc2-debuginfo-2.0-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libobjc2-devel-2.0-4.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libwraster-debuginfo-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/libwraster-devel-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libwraster-debuginfo-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libwraster-devel-5.0.0-0.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-gnustep-debuginfo-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-gnustep-devel-1_27_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-gnustep-debuginfo-1_27_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-gnustep-devel-1_27_0_nextspace-1.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-frameworks-debuginfo-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-frameworks-devel-0.90-2.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-frameworks-debuginfo-0.90-2.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-frameworks-devel-0.90-2.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-applications-debuginfo-0.90-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-applications-devel-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-applications-debuginfo-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-applications-devel-0.90-0.el7.x86_64.rpm
 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/centos7/NSDeveloper/nextspace-core-devel-0.95-11.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-core-devel-0.95-11.el7.x86_64.rpm
 
 
 # NextSpace OS Plymouth theme
@@ -169,7 +169,7 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 
-yum -y remove tboot adwaita-cursor-theme adwaita-icon-theme
+yum -y remove tboot adwaita-cursor-theme adwaita-icon-theme 
 
 echo 'Completed Building, preparing to make ISO...'
 
