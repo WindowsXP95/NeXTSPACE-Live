@@ -120,6 +120,7 @@ yum -y install mpv
 
 
 #NextSpace v0.90 pkgs (Experimental)
+
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
@@ -167,7 +168,6 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 /usr/sbin/plymouth-set-default-theme nextspaceos -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
-#rm -d /usr/share/plymouth/themes/charge/
 
 yum -y remove tboot adwaita-cursor-theme adwaita-icon-theme
 
