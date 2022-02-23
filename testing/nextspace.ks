@@ -17,7 +17,7 @@ repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
-repo --name=Extras --baseurl=http://mirrors.mit.edu/epel/7Server/SRPMS/
+#repo --name=Extras --baseurl=http://mirrors.mit.edu/epel/7Server/SRPMS/
 
 %packages
 @core
