@@ -119,20 +119,20 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
 
-
+# Extra NeXTSPACEOS Packages
 # NextSpace OS Plymouth theme
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/themes.tar
-tar xvf themes.tar -C /usr/share/plymouth
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
+tar xvf NSThemes.tar -C /usr/share/plymouth
 
 # App Wrappers
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
 tar xvf appwrappers.tar -C /
 
 #Custom Branding (Experimental)
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/branding.tar
-tar xvf branding.tar -C /
-cp -R /branding/etc /
-cp -R /branding/usr /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSBranding.tar
+tar xvf NSBranding.tar -C /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-release.tar
+tar xvf os-release.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
@@ -143,6 +143,7 @@ ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/s
 
 yum -y remove tboot
 
+#Post jobs
 echo 'Completed Building, preparing to make ISO...'
 
 touch /etc/skel/Library/Preferences/.WindowMaker/autostart
