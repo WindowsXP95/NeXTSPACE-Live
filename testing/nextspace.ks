@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r3
+# version=1.1.0b_r4
 
 lang en_US.UTF-8
 firewall --disabled
