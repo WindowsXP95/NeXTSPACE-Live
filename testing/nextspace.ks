@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r4
+# version=1.1.0b_r5
 
 lang en_US.UTF-8
 firewall --disabled
@@ -121,8 +121,8 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 
 # Extra NeXTSPACEOS Packages
 # NextSpace OS Plymouth theme
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
-tar xvf NSThemes.tar -C /usr/share/plymouth
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
+#tar xvf NSThemes.tar -C /usr/share/plymouth
 
 # App Wrappers
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
@@ -137,7 +137,7 @@ tar xvf os-release.tar -C /
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
-/usr/sbin/plymouth-set-default-theme nextspaceos -R
+/usr/sbin/plymouth-set-default-theme nextspace -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 
