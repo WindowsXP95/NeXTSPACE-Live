@@ -11,7 +11,7 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 - Weird mount error on startup when first booting (Live mode only)
 
 ## Logging in
-- You can login with the live cd/usb with username "nextspace" and an empty password.
+- You can login with the live cd/usb with username "nextspaceos" and an empty password.
 
 ## Requirements for Building
 - At least dual core processor
@@ -34,7 +34,7 @@ For macOS: chek your /Users/username/
 
 ## Run it in QEMU
 
-qemu-system-x86_64 -enable-kvm -m 1G -cdrom NEXTSPACEOS.iso
+qemu-system-x86_64 -m 1G -cdrom NEXTSPACEOS.iso
 
 ## Run it in VBox
 
