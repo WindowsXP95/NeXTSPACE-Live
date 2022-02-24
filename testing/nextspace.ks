@@ -118,11 +118,9 @@ yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/n
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-0.85-3.el7.x86_64.rpm
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/nextspace-applications-devel-0.85-3.el7.x86_64.rpm
 
-
-# Extra NeXTSPACEOS Packages
 # NextSpace OS Plymouth theme
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
-#tar xvf NSThemes.tar -C /usr/share/plymouth
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
+tar xvf NSThemes.tar -C /usr/share/plymouth
 
 # App Wrappers
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
