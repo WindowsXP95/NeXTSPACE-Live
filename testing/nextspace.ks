@@ -19,8 +19,6 @@ repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
-repo --name=multimedia --baseurl=http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
-repo --name=others --baseurl=http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 
 
 %packages
@@ -95,6 +93,8 @@ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarc
 
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/updates/7/x86_64/r/rpmfusion-free-release-7-4.noarch.rpm
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
+yum -y localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 
 yum -y update
 
