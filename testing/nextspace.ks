@@ -17,7 +17,9 @@ repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
-#repo --name=Extras --baseurl=http://mirrors.mit.edu/epel/7Server/SRPMS/
+repo --name=multimedia --baseurl=http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+repo --name=others --baseurl=http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
+
 
 %packages
 @core
@@ -89,11 +91,14 @@ yum -y install vim nano indent ImageMagick gawk pasystray screenfetch
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
-yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm
+yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/updates/7/x86_64/r/rpmfusion-free-release-7-4.noarch.rpm
+yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
 
 yum -y update
 
 yum -y install mpv 
+
+
 
 # NextSpace Packages (0.85)
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
@@ -135,7 +140,7 @@ tar xvf os-release.tar -C /
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
-/usr/sbin/plymouth-set-default-theme nextspace -R
+/usr/sbin/plymouth-set-default-theme  -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 
@@ -152,10 +157,10 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
-/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel nextspaceos
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
 #passwd $USERNAME
 
 /sbin/groupadd storage
-passwd -d nextspaceos > /dev/null
+passwd -d NSUser > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end
