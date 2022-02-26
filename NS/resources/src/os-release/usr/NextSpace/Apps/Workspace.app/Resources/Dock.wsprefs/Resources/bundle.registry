@@ -1,6 +1,0 @@
-{
-  type = WSPreferences;
-  mode = Dock;
-  class = DockPrefs;
-  priority = 0;
-}

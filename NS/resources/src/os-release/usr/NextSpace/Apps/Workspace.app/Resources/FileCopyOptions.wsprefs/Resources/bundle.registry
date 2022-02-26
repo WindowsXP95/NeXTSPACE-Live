@@ -1,6 +1,0 @@
-{
-  type = WSPreferences;
-  mode = "File Copy Options";
-  class = FileCopyPrefs;
-  priority = 3;
-}

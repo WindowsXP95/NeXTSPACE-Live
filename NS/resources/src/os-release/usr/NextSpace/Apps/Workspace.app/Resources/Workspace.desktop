@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Categories=X-GNUstep;
-Icon=/usr/NextSpace/Apps.app/Resources/App-CentOS-48.tiff
-Exec=/usr/NextSpace/bin/openapp Workspace

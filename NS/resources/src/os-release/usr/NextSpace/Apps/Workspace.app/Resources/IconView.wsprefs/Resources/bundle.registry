@@ -1,6 +1,0 @@
-{
-  type = WSPreferences;
-  mode = "Icon View";
-  class = IconPrefs;
-  priority = 2;
-}
