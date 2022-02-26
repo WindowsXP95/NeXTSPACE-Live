@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r7
+# version=1.1.0b_r8
 
 lang en_US.UTF-8
 firewall --disabled
@@ -153,6 +153,10 @@ yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/pac
 /usr/sbin/plymouth-set-default-theme  -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
+rm /NSBranding.tar
+rm /os-release.tar
+rm /appwrappers.tar
+rm /NSThemes.tar
 
 yum -y remove tboot
 
@@ -167,10 +171,10 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
-/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSLiveUser
 #passwd $USERNAME
 
 /sbin/groupadd storage
-passwd -d NSUser > /dev/null
+passwd -d NSLiveUser > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end
