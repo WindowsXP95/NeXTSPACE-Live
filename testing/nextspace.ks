@@ -87,7 +87,7 @@ EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 # Extra packages and repos
-yum -y install vim nano indent ImageMagick gawk pasystray 
+yum -y install vim nano indent ImageMagick gawk
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
@@ -97,6 +97,9 @@ yum -y localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64
 yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 yum -y localinstall --nogpgcheck http://packages.psychotic.ninja/6/base/i386/RPMS/psychotic-release-1.0.0-1.el6.psychotic.noarch.rpm 
 yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rpm
+
+yum -y localinstall --nogpgcheck https://www.rpmfind.net/linux/fedora/linux/updates/35/Everything/x86_64/Packages/p/pasystray-0.8.0-4.fc35.x86_64.rpm
+
 
 
 yum -y update
