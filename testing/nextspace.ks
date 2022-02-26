@@ -100,7 +100,7 @@ yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rp
 
 yum -y localinstall --nogpgcheck https://www.rpmfind.net/linux/fedora/linux/updates/35/Everything/x86_64/Packages/p/pasystray-0.8.0-4.fc35.x86_64.rpm
 
-
+yum -y install flatpak
 
 yum -y update
 
@@ -108,7 +108,7 @@ yum -y install mpv
 
 # Neofetch
 curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
-
+yum -y localinstall --nogpgcheck neofetch
 
 # NextSpace Packages (0.85)
 yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
@@ -178,5 +178,5 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 passwd -d NSLiveUser > /dev/null
 chmod +x /etc/rc.d/rc.local
 
-Echo 'Finished'
+echo 'Finished'
 %end
