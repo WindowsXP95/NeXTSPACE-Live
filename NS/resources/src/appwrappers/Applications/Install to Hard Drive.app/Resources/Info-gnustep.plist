@@ -1,5 +1,0 @@
-{
-  NSExecutable = "anaconda.Anaconda";
-  NSIcon = "anaconda.tiff";
-  xAppWrapper = YES;
-}

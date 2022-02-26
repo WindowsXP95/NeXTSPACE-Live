@@ -34,7 +34,7 @@ For macOS: chek your /Users/username/
 
 ## Run it in QEMU
 
-qemu-system-x86_64 -m 1G -cdrom NEXTSPACEOS.iso
+qemu-system-x86_64 -m 2G -cdrom NEXTSPACEOS.iso
 
 ## Run it in VBox
 
