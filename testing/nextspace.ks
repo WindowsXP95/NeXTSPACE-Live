@@ -87,7 +87,7 @@ EOF
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 # Extra packages and repos
-yum -y install vim nano indent ImageMagick gawk pasystray screenfetch
+yum -y install vim nano indent ImageMagick gawk pasystray 
 
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 
@@ -95,11 +95,16 @@ yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/updates
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
 yum -y localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
 yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
+yum -y localinstall --nogpgcheck http://packages.psychotic.ninja/6/base/i386/RPMS/psychotic-release-1.0.0-1.el6.psychotic.noarch.rpm 
+yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rpm
+
 
 yum -y update
 
 yum -y install mpv 
 
+# Neofetch
+curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
 
 
 # NextSpace Packages (0.85)
