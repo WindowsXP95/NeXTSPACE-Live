@@ -51,6 +51,7 @@ network-manager-applet
 -kernel
 -kernel-devel
 -kernel-tools-libs
+-kernel-tools
 -kernel-headers
 %end
 %post --nochroot 
