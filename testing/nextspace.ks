@@ -175,6 +175,4 @@ echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 /sbin/groupadd storage
 passwd -d NSLiveUser > /dev/null
 chmod +x /etc/rc.d/rc.local
-
-echo 'Finished'
 %end
