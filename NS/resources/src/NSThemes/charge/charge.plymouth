@@ -5,6 +5,6 @@ ModuleName=script
 
 [script]
 ImageDir=/usr/share/plymouth/themes/charge
-ScriptFile=/usr/share/plymouth/themes/nextspaceos/charge.script
+ScriptFile=/usr/share/plymouth/themes/charge/charge.script
 
 
