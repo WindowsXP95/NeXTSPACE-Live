@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Categories=X-GNUstep;
+Name=Review
+Comment=Simple image viewer
+Icon=/Applications/Review.app/Resources/Review.tiff
+Exec=/usr/NextSpace/bin/openapp Review
+MimeType=

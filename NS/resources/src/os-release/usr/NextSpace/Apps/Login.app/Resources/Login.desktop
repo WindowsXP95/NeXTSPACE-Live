@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Categories=X-GNUstep;
+Name=Login
+Comment=Login window for NEXTSPACE
+Icon=/usr/NextSpace/Apps/Login.app/Resources/loginwindow.tiff
+Exec=/usr/NextSpace/bin/openapp Login
