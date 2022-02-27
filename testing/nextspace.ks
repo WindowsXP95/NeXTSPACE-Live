@@ -25,6 +25,7 @@ kernel-ml
 kernel-ml-devel
 kernel-ml-tools
 kernel-ml-tools-libs
+kernel-ml-tools
 kernel-ml-headers
 wget
 git
