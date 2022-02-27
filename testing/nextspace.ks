@@ -172,7 +172,8 @@ rm /NSBranding.tar
 rm /os-release.tar
 rm /appwrappers.tar
 rm /NSThemes.tar
-Rm /gnustep-gui-0.25.ta
+rm /gnustep-gui-0.25.tar
+
 yum -y remove tboot
 
 #Post jobs
