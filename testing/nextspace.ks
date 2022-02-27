@@ -98,13 +98,11 @@ yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/
 yum -y localinstall --nogpgcheck http://packages.psychotic.ninja/6/base/i386/RPMS/psychotic-release-1.0.0-1.el6.psychotic.noarch.rpm 
 yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rpm
 
-yum -y localinstall --nogpgcheck https://www.rpmfind.net/linux/fedora/linux/updates/35/Everything/x86_64/Packages/p/pasystray-0.8.0-4.fc35.x86_64.rpm
-
-yum -y install flatpak
+#yum -y localinstall --nogpgcheck https://www.rpmfind.net/linux/fedora/linux/updates/35/Everything/x86_64/Packages/p/pasystray-0.8.0-4.fc35.x86_64.rpm
 
 yum -y update
 
-yum -y install mpv 
+yum -y install flatpak xorg-x11-apps
 
 # Neofetch
 curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
