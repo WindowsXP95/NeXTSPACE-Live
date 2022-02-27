@@ -44,4 +44,6 @@ You really need KVM to get decent performance
 You can also run it inside of VirtualBox (recommended if your not used to QEMU)
 
 ## More Info
+[Grab some releases here](https://github.com/WindowsXP95/NeXTSPACE-OS/wiki/Releases)
+
 More info can be found inside of the wiki (which is under construction)
