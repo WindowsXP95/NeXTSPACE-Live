@@ -1,7 +1,0 @@
-#!/bin/sh
-
-#xscreensaver-command -exit
-mpv -quiet --autofit-larger=75%x75% "$2"
-#xscreensaver -no-splash &
-
-# > /dev/null 2>&1

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Categories=X-GNUstep;
-Name=Preferences
-Comment=NEXTSPACE system preferences
-Icon=/Applications/Preferences.app/Resources/Preferences.tiff
-Exec=/usr/NextSpace/bin/openapp Preferences

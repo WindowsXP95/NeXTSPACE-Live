@@ -97,7 +97,7 @@ yum -y localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64
 yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 yum -y localinstall --nogpgcheck http://packages.psychotic.ninja/6/base/i386/RPMS/psychotic-release-1.0.0-1.el6.psychotic.noarch.rpm 
 yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rpm
-
+yum -y localinstall --nogpgcheck https://extras.getpagespeed.com/release-el7-latest.rpm
 #yum -y localinstall --nogpgcheck https://www.rpmfind.net/linux/fedora/linux/updates/35/Everything/x86_64/Packages/p/pasystray-0.8.0-4.fc35.x86_64.rpm
 
 yum -y update
@@ -172,7 +172,7 @@ rm /NSBranding.tar
 rm /os-release.tar
 rm /appwrappers.tar
 rm /NSThemes.tar
-
+Rm /gnustep-gui-0.25.ta
 yum -y remove tboot
 
 #Post jobs
@@ -186,10 +186,10 @@ echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
-/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSLiveUser
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
 #passwd $USERNAME
 
 /sbin/groupadd storage
-passwd -d NSLiveUser > /dev/null
+passwd -d NSUser > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end

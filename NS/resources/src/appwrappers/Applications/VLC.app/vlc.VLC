@@ -1,0 +1,11 @@
+#!/bin/sh
+
+FILE=`echo $2|grep \.html`
+COMMAND="firefox"
+
+if [ "$FILE" != "" ];
+then
+    exec ${COMMAND} "$2"
+else
+    exec ${COMMAND}
+fi
