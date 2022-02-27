@@ -148,7 +148,7 @@ tar xvf os-release.tar -C /
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
 
-/usr/sbin/plymouth-set-default-theme  -R
+/usr/sbin/plymouth-set-default-theme charge -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 rm /NSBranding.tar
