@@ -1,6 +1,0 @@
-﻿{
-  type = Preferences;
-  mode = Password;
-  class = Password;
-  priority = 10;
-}

@@ -106,7 +106,7 @@ yum -y install flatpak xorg-x11-apps
 
 # Neofetch
 curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
-yum -y localinstall --nogpgcheck neofetch
+
 
 # NextSpace Packages (0.85)
 #yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm

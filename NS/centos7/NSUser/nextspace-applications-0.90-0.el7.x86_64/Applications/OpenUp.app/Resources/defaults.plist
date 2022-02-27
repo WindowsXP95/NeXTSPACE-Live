@@ -1,8 +1,0 @@
-{
-	TempFilesDirectory="/tmp";
-	DeleteTempFilesOnQuit="NO";
-	Debug="NO";
-	RunTask="YES";
-	DefaultShell="/bin/sh";
-	DefaultShellArgs="-c";
-}

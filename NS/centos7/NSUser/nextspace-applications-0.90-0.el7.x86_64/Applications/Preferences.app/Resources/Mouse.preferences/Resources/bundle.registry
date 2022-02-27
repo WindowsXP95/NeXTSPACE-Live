@@ -1,6 +1,0 @@
-{
-  type = Preferences;
-  mode = Mouse;
-  class = Mouse;
-  priority = 6;
-}
