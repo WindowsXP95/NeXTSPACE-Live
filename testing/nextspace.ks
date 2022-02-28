@@ -18,7 +18,6 @@ repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
 
-
 %packages
 @core
 @x11
@@ -104,27 +103,27 @@ yum -y install flatpak xorg-x11-apps neofetch dia
 
 
 # NextSpace v0.90 pkgs 
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
 
 
 # NextSpace v0.91 pkgs (Exprimental)
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libobjc2-2.1-0.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el8.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libobjc2-2.1-0.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el8.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el8.x86_64.rpm
 
 # NextSpace OS Plymouth theme
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
@@ -142,8 +141,10 @@ tar xvf os-release.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
+yum -y install https://distrib-coffee.ipsl.jussieu.fr/pub/linux/Mageia/distrib/cauldron/x86_64/media/core/release/wmix-3.5-1.mga8.x86_64.rpm
 
-/usr/sbin/plymouth-set-default-theme nextspaceos -R
+
+/usr/sbin/plymouth-set-default-theme nextspace -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 rm /NSBranding.tar
@@ -160,7 +161,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-#echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
