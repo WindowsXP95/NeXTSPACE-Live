@@ -9,6 +9,7 @@ keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
+rootpw --plaintext root
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
