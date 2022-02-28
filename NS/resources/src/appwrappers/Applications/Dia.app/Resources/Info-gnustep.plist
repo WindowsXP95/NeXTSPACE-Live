@@ -1,0 +1,12 @@
+{
+  ApplicationRelease = "0.97";
+  NSExecutable = "dia.Dia";
+  NSRole = "Editor";
+  NSIcon = "Dia.png";
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "dia" );
+      NSIcon = "Dia.png";
+    }
+  );
+}

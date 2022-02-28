@@ -132,7 +132,7 @@ echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "pasystray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
-/sbin/useradd -b /Users -s /bin/zsh -G audio nextspace
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel nextspace
 /sbin/groupadd storage
 passwd -d nextspace > /dev/null
 chmod +x /etc/rc.d/rc.local

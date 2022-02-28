@@ -1,0 +1,13 @@
+{
+    ShelfContents = {
+	(
+	    <*I0>,
+	    <*I0>
+	) = (
+	    "/Users/me/Applications/Dia.app"
+	);
+    };
+    ShelfSize = <*I76>;
+    ViewerPath = "/Dia";
+    ViewerWindow = "{x = 524; y = 145; width = 560; height = 423}";
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+FILE=`echo $2|grep \.dia`
+COMMAND="dia"
+
+if [ "$FILE" != "" ];
+then
+    exec ${COMMAND} ${FILE}
+else
+    exec ${COMMAND}
+fi
