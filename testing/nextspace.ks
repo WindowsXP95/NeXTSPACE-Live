@@ -140,7 +140,7 @@ tar xvf os-release.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
-yum -y install https://distrib-coffee.ipsl.jussieu.fr/pub/linux/altlinux/Sisyphus/x86_64/RPMS.classic/wmix-3.1-alt3.qa1.x86_64.rpm
+#yum -y install https://distrib-coffee.ipsl.jussieu.fr/pub/linux/altlinux/Sisyphus/x86_64/RPMS.classic/wmix-3.1-alt3.qa1.x86_64.rpm
 
 
 /usr/sbin/plymouth-set-default-theme nextspace -R
