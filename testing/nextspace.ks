@@ -98,30 +98,31 @@ curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracl
 
 yum -y update
 
-yum -y install flatpak xorg-x11-apps neofetch dia
+yum -y install flatpak xorg-x11-apps neofetch 
 
 # NextSpace v0.90 pkgs 
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
-yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
+#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
+#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
 
 
 # NextSpace v0.91 pkgs (Exprimental)
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libobjc2-2.1-0.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el8.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el8.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libobjc2-2.1-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el7.x86_64.rpm
+
 
 # NextSpace OS Plymouth theme
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
