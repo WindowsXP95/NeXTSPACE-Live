@@ -114,14 +114,14 @@ yum -y install flatpak xorg-x11-apps neofetch
 
 
 # NextSpace v0.91 pkgs (Exprimental)
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libobjc2-2.1-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libobjc2-2.1-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el7.x86_64.rpm
 
 
 # NextSpace OS Plymouth theme
