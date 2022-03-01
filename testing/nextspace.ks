@@ -160,7 +160,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+#echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
