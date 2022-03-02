@@ -140,7 +140,7 @@ tar xvf os-release.tar -C /
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
-#yum -y install https://distrib-coffee.ipsl.jussieu.fr/pub/linux/altlinux/Sisyphus/x86_64/RPMS.classic/wmix-3.1-alt3.qa1.x86_64.rpm
+yum -y install http://repo.openfusion.net/centos7-x86_64/wm-dockapps-1.4-1.of.el7.x86_64.rpm 
 
 
 /usr/sbin/plymouth-set-default-theme nextspace -R
@@ -160,7 +160,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-#echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
