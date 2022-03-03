@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r14
+# version=1.1.0b_r16
 
 lang en_US.UTF-8
 firewall --disabled
@@ -9,7 +9,7 @@ keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
-rootpw --plaintext root
+rootpw --plaintext NSUser
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -88,41 +88,30 @@ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarc
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/updates/7/x86_64/r/rpmfusion-free-release-7-4.noarch.rpm
 yum -y localinstall --nogpgcheck https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
 yum -y localinstall --nogpgcheck http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
-#yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm 
-#yum -y localinstall --nogpgcheck https://centos7.iuscommunity.org/ius-release.rpm
+yum -y localinstall --nogpgcheck http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm 
 curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracloud.org/coprs/konimex/neofetch/repo/epel-7/konimex-neofetch-epel-7.repo
 
 yum -y update
 
-yum -y install xorg-x11-apps
+yum -y install xorg-x11-apps flatpak neofetch
 
 # NextSpace v0.90 pkgs 
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
-#yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/llvm-libs-7.0.1-3.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-libs-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/trunkmaster/nextspace/releases/download/0.85/clang-7.0.1-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
 
-
-# NextSpace v0.91 pkgs (Exprimental)
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libobjc2-2.1-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-frameworks-0.91-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-core-0.95-12.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/v0.91/NSUser/nextspace-applications-0.91-0.el7.x86_64.rpm
 
 
 # NextSpace OS Plymouth theme
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSThemes.tar
-tar xvf NSThemes.tar -C /usr/share/plymouth
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/bootsplash.tar
+tar xvf bootsplash.tar -C /usr/share/plymouth
 
 # App Wrappers
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
@@ -135,6 +124,8 @@ wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-rele
 tar xvf os-release.tar -C /
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
 tar xvf nsdockapps.tar -C /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/onestepback.tar
+tar xvf onestepback.tar -C /
 
 chmod +x /usr/bin/pclock
 chmod +x /usr/bin/wmamixer
@@ -149,32 +140,24 @@ yum -y install http://repo.openfusion.net/centos7-x86_64/wm-dockapps-1.4-1.of.el
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 rm /NSBranding.tar
-#rm /os-release.tar
+rm /os-release.tar
 rm /appwrappers.tar
-rm /NSThemes.tar
+rm /bootsplash.tar
 rm /nsdockapps.tar
+rmdir -r /Applications/TimeMon.app 
 
 yum -y remove tboot
 
 #Post jobs
 echo 'Completed Building, preparing to make ISO...'
 
-# Autostart (v0.90)
 touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-
-# Autostart (v0.91)
-touch /etc/skel/Library/Preferences/.NextSpace/autostart
-chmod +x /etc/skel/Library/Preferences/.NextSpace/autostart
-
-echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.NextSpace/autostart
-echo "nm-applet &" >> /etc/skel/Library/Preferences/.NextSpace/autostart
-echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.NextSpace/autostart
-
+echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
