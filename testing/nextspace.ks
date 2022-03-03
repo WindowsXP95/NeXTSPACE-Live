@@ -136,9 +136,9 @@ tar xvf os-release.tar -C /
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
 tar xvf nsdockapps.tar -C /
 
-chmod 777 /usr/bin/pclock
-chmod 777 /usr/bin/wmamixer
-chmod 777 /usr/bin/cputnik
+chmod +x /usr/bin/pclock
+chmod +x /usr/bin/wmamixer
+chmod +x /usr/bin/cputnik
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
@@ -149,7 +149,7 @@ yum -y install http://repo.openfusion.net/centos7-x86_64/wm-dockapps-1.4-1.of.el
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
 rm /NSBranding.tar
-rm /os-release.tar
+#rm /os-release.tar
 rm /appwrappers.tar
 rm /NSThemes.tar
 rm /nsdockapps.tar
