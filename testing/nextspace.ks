@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r11
+# version=1.1.0b_r14
 
 lang en_US.UTF-8
 firewall --disabled
@@ -132,11 +132,17 @@ tar xvf NSThemes.tar -C /usr/share/plymouth
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrappers.tar
 tar xvf appwrappers.tar -C /
 
-#Custom Branding (Experimental)
+#Custom Branding and dock apps (Experimental)
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSBranding.tar
 tar xvf NSBranding.tar -C /
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-release.tar
 tar xvf os-release.tar -C /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
+tar xvf nsdockapps.tar -C /
+
+chmod 777 /usr/bin/pclock
+chmod 777 /usr/bin/wmamixer
+chmod 777 /usr/bin/cputnik
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
@@ -150,6 +156,7 @@ rm /NSBranding.tar
 rm /os-release.tar
 rm /appwrappers.tar
 rm /NSThemes.tar
+rm /nsdockapps
 
 yum -y remove tboot
 
@@ -160,7 +167,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "wmix &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "/usr/bin/wmamixer &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
