@@ -156,7 +156,7 @@ rm /NSBranding.tar
 rm /os-release.tar
 rm /appwrappers.tar
 rm /NSThemes.tar
-rm /nsdockapps
+rm /nsdockapps.tar
 
 yum -y remove tboot
 
@@ -167,7 +167,7 @@ touch /etc/skel/Library/Preferences/.WindowMaker/autostart
 chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "/usr/bin/wmamixer &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 
 # User Configs
