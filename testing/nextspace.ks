@@ -144,7 +144,7 @@ rm /os-release.tar
 rm /appwrappers.tar
 rm /bootsplash.tar
 rm /nsdockapps.tar
-rmdir -pv /Applications/TimeMon.app 
+rm -rf /Applications/TimeMon.app 
 
 yum -y remove tboot
 
