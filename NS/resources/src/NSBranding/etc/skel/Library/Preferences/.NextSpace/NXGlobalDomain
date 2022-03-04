@@ -28,6 +28,6 @@
   MouseThreshold = <*I4>;
   MouseWheelControlScroll = <*I1>;
   MouseWheelScroll = <*I3>;
-  NXSystemBeep = "/usr/NextSpace/Sounds/Bonk.snd";
+  NXSystemBeep = "/usr/NextSpace/Sounds/Ni.snd";
   NXSystemBeepType = Visual;
 }

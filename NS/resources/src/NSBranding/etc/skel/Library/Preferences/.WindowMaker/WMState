@@ -21,15 +21,6 @@
       },
       {
         Position = "0,2";
-        Command = "/Applications/TimeMon.app/TimeMon";
-        Name = TimeMon.GNUstep;
-        AutoLaunch = Yes;
-        Forced = No;
-        Lock = No;
-        BuggyApplication = No;
-      },
-      {
-        Position = "0,3";
         Command = "/Applications/Terminal.app/Terminal";
         Name = Terminal.GNUstep;
         AutoLaunch = No;
@@ -38,7 +29,7 @@
         BuggyApplication = No;
       },
       {
-        Position = "0,4";
+        Position = "0,3";
         Command = "/Applications/TextEdit.app/TextEdit";
         Name = TextEdit.GNUstep;
         AutoLaunch = No;
@@ -62,7 +53,7 @@
       Name = "Workspace 3";
     },
     {
-      Name = "Workspace 3";
+      Name = "Workspace 4";
     }
   );
 }
