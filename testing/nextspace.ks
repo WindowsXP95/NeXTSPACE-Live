@@ -109,6 +109,7 @@ yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7
 
 
 
+
 # NextSpace OS Plymouth theme
 wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/bootsplash.tar
 tar xvf bootsplash.tar -C /usr/share/plymouth
