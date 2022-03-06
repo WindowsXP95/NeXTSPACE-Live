@@ -93,7 +93,7 @@ curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracl
 
 yum -y update
 
-yum -y install xorg-x11-apps flatpak neofetch
+yum -y install xorg-x11-apps neofetch
 
 # NextSpace v0.90 pkgs 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
