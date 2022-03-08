@@ -19,7 +19,7 @@ repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
 
 %packages
-@Minimal
+@Core
 @x11
 kernel-ml
 kernel-ml-devel
