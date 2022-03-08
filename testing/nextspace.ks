@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r16
+# version=1.1.0b_r20
 
 lang en_US.UTF-8
 firewall --disabled
@@ -19,7 +19,7 @@ repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
 
 %packages
-@minimal
+@^minimal
 @x11
 kernel-ml
 kernel-ml-devel
