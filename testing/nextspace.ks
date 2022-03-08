@@ -45,7 +45,7 @@ xorg-x11-drv-libinput
 xorg-x11-drv-mouse
 xorg-x11-drv-openchrome
 wayland-protocols-devel
-Xorg-x11-xbitmaps
+xorg-x11-xbitmaps
 xorg-x11-drv-evdev
 pulseaudio
 alsa-plugins-pulseaudio
