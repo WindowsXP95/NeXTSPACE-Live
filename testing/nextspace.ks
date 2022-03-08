@@ -20,7 +20,6 @@ repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
 
 %packages
 @Core
-@x11
 kernel-ml
 kernel-ml-devel
 kernel-ml-tools
