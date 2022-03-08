@@ -34,9 +34,13 @@ For macOS: chek your /Users/username/
 
 ## Run it in QEMU
 
-qemu-system-x86_64 -m 2G -cdrom NEXTSPACEOS.iso
+If on macOS:
+qemu-system-x86_64 -m 2G -cdrom /home/username/xxxxxxxxxxxxx.iso -accel hvf -cpu host
 
-## Run it in VBox
+If on Linux:
+qemu-system-x86_64 -m 2G -cdrom /home/username/xxxxxxxxxxxxx.iso -accel kvm -cpu host
+
+## Run it in VBox (VirtualBox)
 
 Make a new RedHat Linux based VM, you can call it anything you want. Give it about 1 GB of ram and at least 12 GB of HD space if you plan to install it.
 
