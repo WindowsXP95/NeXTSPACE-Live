@@ -10,3 +10,6 @@ bindkey -e
 clear
 cd ~/
 echo "Welcome to the NeXT world!"
+
+LC_ALL=C
+export LC_ALL
