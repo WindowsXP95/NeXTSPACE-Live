@@ -25,6 +25,7 @@ kernel-ml-devel
 kernel-ml-tools
 kernel-ml-tools-libs
 kernel-ml-headers
+hfsplus-tools
 wget
 git
 sudo
