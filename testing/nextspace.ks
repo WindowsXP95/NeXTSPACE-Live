@@ -25,7 +25,6 @@ kernel-ml-devel
 kernel-ml-tools
 kernel-ml-tools-libs
 kernel-ml-headers
-hfsplus-tools
 wget
 git
 sudo
@@ -69,6 +68,9 @@ network-manager-applet
 -kernel-tools
 -kernel-headers
 %end
+
+yum -y install http://mirror.centos.org/centos/7/extras/x86_64/Packages/hfsplus-tools-540.1.linux3-4.el7.x86_64.rpm
+
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
 cp etc/default/useradd $INSTALL_ROOT/etc/default/useradd
