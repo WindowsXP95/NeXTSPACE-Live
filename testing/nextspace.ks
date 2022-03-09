@@ -69,7 +69,9 @@ network-manager-applet
 -kernel-headers
 %end
 
+%post
 yum -y install http://mirror.centos.org/centos/7/extras/x86_64/Packages/hfsplus-tools-540.1.linux3-4.el7.x86_64.rpm
+%end
 
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
@@ -98,7 +100,7 @@ NETWORKWAIT=1
 EOF
 
 # Extra packages and repos
-yum -y install vim nano indent ImageMagick gawk
+yum -y install vim nano indent ImageMagick gawk hfsplus-tools
 
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
