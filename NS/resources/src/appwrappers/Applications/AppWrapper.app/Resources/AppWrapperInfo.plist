@@ -1,9 +1,0 @@
-{
-  ApplicationName = "AppWrapper";
-  ApplicationDescription = "GNUstep Application Wrapper";
-  ApplicationRelease = "AppWrapper 0.1";
-  FullVersionID = "0.1 Jun 2002";
-  Authors = ("Jason Lincoln <jlincoln@yahoo.com>");
-  Copyright = "";
-  CopyrightDescription = "Released under the GNU General Public License 2.0";
-}
