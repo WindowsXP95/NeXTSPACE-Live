@@ -17,12 +17,13 @@ repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
+repo --name=centosplus --baseurl=http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
+repo --name=centosextras --baseurl=http://mirror.centos.org/centos/$OS_RELEASE_MAJOR/extras/\$basearch/
 
 %packages
 @Core
 kernel-ml
 kernel-ml-devel
-kernel-ml-tools
 kernel-ml-tools-libs
 kernel-ml-headers
 wget
