@@ -62,16 +62,13 @@ syslinux
 firefox
 emacs
 gimp
+hfsplus-tools
 network-manager-applet
 -kernel
 -kernel-devel
 -kernel-tools-libs
 -kernel-tools
 -kernel-headers
-%end
-
-%post
-yum -y install http://mirror.centos.org/centos/7/extras/x86_64/Packages/hfsplus-tools-540.1.linux3-4.el7.x86_64.rpm
 %end
 
 %post --nochroot 
