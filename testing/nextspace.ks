@@ -30,7 +30,6 @@ kernel-ml-headers
 wget
 git
 sudo
-thunderbird
 cups-libs
 cups-pk-helper
 anaconda
