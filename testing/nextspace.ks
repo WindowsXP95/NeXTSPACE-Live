@@ -13,7 +13,8 @@ rootpw --plaintext NSUser
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-repo --name=epel-release --baseurl=http://download.example/pub/epel/7/$basearch
+repo --name=epel-release --baseurl=https://dl.fedoraproject.org/pub/epel/7/x86_64/
+Repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el7/x86_64/ --install
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
