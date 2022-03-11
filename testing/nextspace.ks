@@ -113,7 +113,7 @@ curl -o /etc/yum.repos.d/konimex-neofetch-epel-7.repo https://copr.fedorainfracl
 
 yum -y update
 
-yum -y install xorg-x11-apps neofetch
+yum -y install xorg-x11-apps neofetch dbus-x11
 
 # NextSpace v0.90 pkgs 
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
@@ -185,6 +185,7 @@ echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 #echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
+gsettings set org.gnome.desktop.interface gtk-theme OneStepBack
 # User Configs
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
 #passwd $USERNAME
