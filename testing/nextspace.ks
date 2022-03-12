@@ -9,7 +9,8 @@ keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
-rootpw --plaintext NSUser
+rootpw --plaintext ppc
+firstboot --enabled
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -180,11 +181,11 @@ echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/auto
 #echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
-#/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
-#passwd $USERNAME
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel $(whoami)
+#passwd $(whoami)
 
 /sbin/groupadd storage
-passwd -d NSUser > /dev/null
+passwd -d $(whoami) > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end
 
