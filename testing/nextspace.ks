@@ -188,7 +188,3 @@ echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/auto
 passwd -d $(whoami) > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end
-
-%post --nochroot
-
-
