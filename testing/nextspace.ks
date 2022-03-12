@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r20
+# version=1.1.0b_r22
 
 lang en_US.UTF-8
 firewall --disabled
@@ -30,11 +30,8 @@ kernel-ml-headers
 wget
 git
 sudo
-cups-libs
-cups-pk-helper
 anaconda
 @anaconda-tools
-@legacy-unix
 @legacy-x
 xorg-x11-fonts-75dpi
 xterm
@@ -182,12 +179,15 @@ echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 #echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
-gsettings set org.gnome.desktop.interface gtk-theme OneStepBack
 # User Configs
-/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
+#/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
 #passwd $USERNAME
 
 /sbin/groupadd storage
 passwd -d NSUser > /dev/null
 chmod +x /etc/rc.d/rc.local
 %end
+
+%post --nochroot
+
+
