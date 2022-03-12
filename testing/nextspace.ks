@@ -145,12 +145,6 @@ b43-openfwwf
 -zd1211-firmware
 %end
 
-
-
-
-
-%end
-
 %post --nochroot 
 cp /etc/resolv.conf $INSTALL_ROOT/etc/resolv.conf
 cp etc/default/useradd $INSTALL_ROOT/etc/default/useradd
