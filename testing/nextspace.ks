@@ -79,7 +79,6 @@ xorg-x11-drv-ati-firmware
 -iprutils
 -fprintd-pam
 -intltool
-b43-openfwwf
 %end
 
 %post --nochroot 
