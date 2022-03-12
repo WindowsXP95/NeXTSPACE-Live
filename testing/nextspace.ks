@@ -80,7 +80,6 @@ xorg-x11-drv-ati-firmware
 -fprintd-pam
 -intltool
 b43-openfwwf
-bfa-firmware
 %end
 
 %post --nochroot 
