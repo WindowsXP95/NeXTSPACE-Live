@@ -7,12 +7,12 @@ This project aims to make a Nextspace Linux distro by using the now retired next
 
 ## Known issues
 - No GUI networking tools
-- No decision made on base applications yet.
 - Weird mount error on startup when first booting (Live mode only)
 - No wireless drivers for Broadcom Wireless cards (due to new kernel)
 
 ## Logging in
 - You can login with the live cd/usb with username "nextspaceos" and an empty password.
+- For the public beta iso, its "NSUser"
 
 ## Requirements for Building
 - At least dual core processor
