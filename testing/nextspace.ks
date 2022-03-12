@@ -14,13 +14,13 @@ firstboot --enabled
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-repo --name=epel-release --baseurl=https://dl.fedoraproject.org/pub/epel/7/x86_64/
+repo --name=epel-release --baseurl=https://dl.fedoraproject.org/pub/epel/7/x86_64/ --install
 repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el7/x86_64/ --install
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/x86_64/ --install
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el7/x86_64/ --install
-repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/
-repo --name=centosplus --baseurl=http://mirror.centos.org/centos/7/centosplus/$basearch/
-repo --name=centosextras --baseurl=http://mirror.centos.org/centos/7/extras/$basearch/
+repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el7/x86_64/ --install
+repo --name=centosplus --baseurl=http://mirror.centos.org/centos/7/centosplus/$basearch/ --install
+repo --name=centosextras --baseurl=http://mirror.centos.org/centos/7/extras/$basearch/ --install
 
 %packages
 @Core
@@ -79,7 +79,6 @@ xorg-x11-drv-ati-firmware
 -iprutils
 -fprintd-pam
 -intltool
-atmel-firmware
 b43-openfwwf
 bfa-firmware
 %end
