@@ -10,7 +10,7 @@ timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext ppc
-firstboot --enabled
+firstboot --enable
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -179,6 +179,7 @@ rm /nsdockapps.tar
 rm /onestepback.tar
 rm -rf /Applications/TimeMon.app 
 
+
 yum -y remove tboot
 
 #Post jobs
@@ -193,9 +194,10 @@ echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/auto
 #echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
+/sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel $(whoami)
-#passwd $(whoami)
-
+/sbin/groupadd storage
+passwd -d NSUser > /dev/null
 /sbin/groupadd storage
 passwd -d $(whoami) > /dev/null
 chmod +x /etc/rc.d/rc.local
