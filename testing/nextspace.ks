@@ -192,7 +192,7 @@ chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "/usr/bin/wmapm -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "/usr/bin/wmapm &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
