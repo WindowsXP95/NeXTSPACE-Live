@@ -162,6 +162,7 @@ tar xvf nsdockapps.tar -C /
 chmod +x /usr/bin/pclock
 chmod +x /usr/bin/wmamixer
 chmod +x /usr/bin/cputnik
+chmod +x /usr/bin/mkappwrapper
 
 # Finishing touches
 yum -y install https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive01/packages/wmsystemtray/1.4/3.fc24/x86_64/wmsystemtray-1.4-3.fc24.x86_64.rpm
@@ -178,7 +179,7 @@ rm /bootsplash.tar
 rm /nsdockapps.tar
 rm /onestepback.tar
 rm -rf /Applications/TimeMon.app 
-
+rm -rf /Library/Sounds
 
 yum -y remove tboot
 
@@ -191,7 +192,7 @@ chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-#echo "/usr/bin/cputnik -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+echo "/usr/bin/wmapm -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
