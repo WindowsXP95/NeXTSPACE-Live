@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r24
+# version=1.1.0b_r25
 
 lang en_US.UTF-8
 firewall --disabled
@@ -76,7 +76,6 @@ network-manager-applet
 -abrt-addon-kerneloops
 xorg-x11-drv-ati-firmware
 -zd1211-firmware
--iprutils
 -fprintd-pam
 -intltool
 %end
