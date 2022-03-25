@@ -197,8 +197,8 @@ yum -y remove tboot
 #Post jobs
 echo 'Completed Building, preparing to make ISO...'
 
-touch /etc/skel/Library/Preferences/.NextSpace/autostart
-chmod +x /etc/skel/Library/Preferences/.NextSpace/autostart
+#touch /etc/skel/Library/Preferences/.NextSpace/autostart
+#chmod +x /etc/skel/Library/Preferences/.NextSpace/autostart
 
 #echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 #echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
