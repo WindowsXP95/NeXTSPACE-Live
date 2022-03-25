@@ -171,27 +171,27 @@ yum -y install http://repo.openfusion.net/centos7-x86_64/wm-dockapps-1.4-1.of.el
 /usr/sbin/plymouth-set-default-theme nextspace -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
-rm /NSBranding.tar
-rm /os-release.tar
+#rm /NSBranding.tar
+#rm /os-release.tar
 rm /appwrappers.tar
-rm /bootsplash.tar
+#rm /bootsplash.tar
 rm /nsdockapps.tar
 rm /onestepback.tar
-rm -rf /Applications/TimeMon.app 
-rm -rf /Library/Sounds
+#rm -rf /Applications/TimeMon.app 
+#rm -rf /Library/Sounds
 
 yum -y remove tboot
 
 #Post jobs
 echo 'Completed Building, preparing to make ISO...'
 
-touch /etc/skel/Library/Preferences/.WindowMaker/autostart
-chmod +x /etc/skel/Library/Preferences/.WindowMaker/autostart
+touch /etc/skel/Library/Preferences/.NextSpace/autostart
+chmod +x /etc/skel/Library/Preferences/.NextSpace/autostart
 
-echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
-echo "/usr/bin/wmapm &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+#echo "wmsystemtray &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+#echo "nm-applet &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+#echo "/usr/bin/wmamixer -w &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
+#echo "/usr/bin/wmapm &" >> /etc/skel/Library/Preferences/.WindowMaker/autostart
 
 # User Configs
 /sbin/useradd -b /Users -s /bin/zsh -G audio,wheel NSUser
