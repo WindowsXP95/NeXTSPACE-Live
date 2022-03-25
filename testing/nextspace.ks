@@ -122,21 +122,33 @@ yum -y update
 yum -y install xorg-x11-apps neofetch dbus-x11
 
 # NextSpace v0.90 pkgs 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libdispatch-5.1.5-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libobjc2-2.0-4.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-gnustep-1_27_0_nextspace-1.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-frameworks-0.90-2.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-core-0.95-11.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSUser/nextspace-applications-0.90-0.el7.x86_64.rpm
 
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libdispatch-devel-5.1.5-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libobjc2-devel-2.0-4.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libwraster-devel-5.0.0-0.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-core-devel-0.95-11.el7.x86_64.rp
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-gnustep-devel-1_27_0_nextspace-1.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-frameworks-devel-0.90-2.el7.x86_64.rpm
-yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-applications-devel-0.90-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libdispatch-devel-5.1.5-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libobjc2-devel-2.0-4.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/libwraster-devel-5.0.0-0.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-core-devel-0.95-11.el7.x86_64.rp
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-gnustep-devel-1_27_0_nextspace-1.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-frameworks-devel-0.90-2.el7.x86_64.rpm
+#yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/centos7/NSDeveloper/nextspace-applications-devel-0.90-0.el7.x86_64.rpm
+
+
+
+# 0.91 pkgs
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/libobjc2-2.1-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/libwraster-5.0.0-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/nextspace-gnustep-1_28_0_nextspace-1.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/nextspace-frameworks-0.91-0.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/nextspace-core-0.95-12.el7.x86_64.rpm
+yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/blob/master/NS/pkgs/0.91_testing/NSUser/nextspace-applications-0.91-0.el7.x86_64.rpm
 
 
 
@@ -149,14 +161,14 @@ wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrap
 tar xvf appwrappers.tar -C /
 
 #Custom Branding and dock apps (Experimental)
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSBranding.tar
-tar xvf NSBranding.tar -C /
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/onestepback.tar
-tar xvf onestepback.tar -C /
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-release.tar
-tar xvf os-release.tar -C /
-wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
-tar xvf nsdockapps.tar -C /
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSBranding.tar
+#tar xvf NSBranding.tar -C /
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/onestepback.tar
+#tar xvf onestepback.tar -C /
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-release.tar
+#tar xvf os-release.tar -C /
+#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
+#tar xvf nsdockapps.tar -C /
 
 chmod +x /usr/bin/pclock
 chmod +x /usr/bin/wmamixer
