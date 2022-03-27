@@ -1,0 +1,5 @@
+#!/bin/sh
+
+APP="/usr/bin/liveinst"
+
+$APP &

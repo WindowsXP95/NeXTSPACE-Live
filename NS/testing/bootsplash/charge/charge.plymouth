@@ -1,0 +1,10 @@
+[Plymouth Theme]
+Name=Charge
+Description=CentOS Plymouth theme for NextSpaceOS (first boot replacement version)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/charge
+ScriptFile=/usr/share/plymouth/themes/charge/charge.script
+
+

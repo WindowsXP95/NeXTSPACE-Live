@@ -1,0 +1,13 @@
+{
+    ShelfContents = {
+	(
+	    <*I0>,
+	    <*I0>
+	) = (
+	    "/Users/me/Applications/Emacs.app"
+	);
+    };
+    ShelfSize = <*I76>;
+    ViewerPath = "/Emacs";
+    ViewerWindow = "{x = 250; y = 173; width = 560; height = 422}";
+}

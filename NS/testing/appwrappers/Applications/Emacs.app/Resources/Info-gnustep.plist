@@ -1,0 +1,16 @@
+{
+  ApplicationRelease = "24.3";
+  NSExecutable = "emacs.Emacs";
+  NSRole = "Editor";
+  NSIcon = "emacs.png";
+  NSTypes = (
+    {
+      NSUnixExtensions = ( "org" );
+      NSIcon = "emacs.png";
+    },
+    {
+      NSUnixExtensions = ( "md" );
+      NSIcon = "emacs.png";
+    }
+  );
+}
