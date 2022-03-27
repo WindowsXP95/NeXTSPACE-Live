@@ -161,14 +161,18 @@ wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/appwrap
 tar xvf appwrappers.tar -C /
 
 #Custom Branding and dock apps (Experimental)
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/NSBranding.tar
-#tar xvf NSBranding.tar -C /
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/onestepback.tar
-#tar xvf onestepback.tar -C /
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/os-release.tar
-#tar xvf os-release.tar -C /
-#wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
-#tar xvf nsdockapps.tar -C /
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/testing/NSBranding.tar
+tar xvf NSBranding.tar -C /
+
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/testing/os-release.tar
+tar xvf os-release.tar -C /
+
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/nsdockapps.tar
+tar xvf nsdockapps.tar -C /
+
+wget https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/resources/Documentation.tar
+tar xvf Documentation.tar -C /
+
 
 chmod +x /usr/bin/pclock
 chmod +x /usr/bin/wmamixer
@@ -183,14 +187,14 @@ yum -y install http://repo.openfusion.net/centos7-x86_64/wm-dockapps-1.4-1.of.el
 /usr/sbin/plymouth-set-default-theme nextspace -R
 ln -s /usr/NextSpace/Apps/Login.app/Resources/loginwindow.service /etc/systemd/system/multi-user.target.wants/display-manager.service
 
-#rm /NSBranding.tar
-#rm /os-release.tar
+rm /NSBranding.tar
+rm /os-release.tar
 rm /appwrappers.tar
-#rm /bootsplash.tar
+rm /bootsplash.tar
 rm /nsdockapps.tar
-rm /onestepback.tar
+rm /Documentation.tar
 #rm -rf /Applications/TimeMon.app 
-#rm -rf /Library/Sounds
+rm -rf /Library/Sounds
 
 yum -y remove tboot
 
