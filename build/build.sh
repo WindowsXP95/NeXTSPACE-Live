@@ -11,15 +11,17 @@ do
             echo "Building Stable"
             echo ""
             livecd-creator --config /NeXTSPACE-OS/rel/stable/nextspace.ks --title "NEXTSPACEOS" --fslabel "NEXTSPACEOS_rel_stable"
+            break
             ;;
         "Build Beta")
             echo "Building beta"
             echo ""
 	    livecd-creator --config /NeXTSPACE-OS/rel/beta/nextspace.ks --title "NEXTSPACEOS" --fslabel "NEXTSPACEOS_Beta"
+            break
             ;;
         "Quit")
             break
             ;;
-        *) echo "invalid option $REPLY";;
+        *) echo "Invalid option $REPLY";;
     esac
 done
