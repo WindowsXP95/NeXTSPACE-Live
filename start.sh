@@ -5,6 +5,6 @@ docker start nextspace-testing
 docker exec -w / -it nextspace-testing git clone https://github.com/WindowsXP95/NeXTSPACE-OS.git
 docker exec -w /NeXTSPACE-OS -it nextspace-testing sh /NeXTSPACE-OS/build/build.sh
 docker cp nextspace-testing:/NeXTSPACE-OS/nxt.iso ~/nextspaceos_rel-$(date +"%Y%m%d").iso
-docker cp nextspace-testing:/NeXTSPACE-OS/nxt.iso ~/nextspaceos_rel_beta-$(date +"%Y%m%d").iso
+docker cp nextspace-testing:/NeXTSPACE-OS/nxtbeta.iso ~/nextspaceos_rel_beta-$(date +"%Y%m%d").iso
 docker stop nextspace-testing
 docker container rm nextspace-testing
