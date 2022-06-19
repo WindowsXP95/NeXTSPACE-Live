@@ -10,13 +10,13 @@ do
         "Build Stable")
             echo "Building Stable"
             echo ""
-            livecd-creator --config /NeXTSPACE-OS/rel/stable/nextspace.ks --title "nxt" --fslabel "nextspaceos_rel_stable"
+            livecd-creator --config /NeXTSPACE-OS/release/stable/nextspace.ks --title "nxt" --fslabel "nextspaceos_rel_stable"
             break
             ;;
         "Build Beta")
             echo "Building beta"
             echo ""
-	    livecd-creator --config /NeXTSPACE-OS/rel/beta/nextspace.ks --title "nxtbeta" --fslabel "nextspaceos_rel_beta"
+	    livecd-creator --config /NeXTSPACE-OS/release/beta/nextspace.ks --title "nxtbeta" --fslabel "nextspaceos_rel_beta"
             break
             ;;
         "Quit")
