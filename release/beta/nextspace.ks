@@ -1,16 +1,16 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r28
+# version=1.2.0a_r2
 
 lang en_US.UTF-8
 firewall --disabled
 keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
-selinux --disabled
-rootpw --plaintext ppc
-firstboot --disable
+selinux --enabled
+#rootpw --plaintext ppc
+firstboot --enabled
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -63,6 +63,11 @@ firefox
 emacs
 gimp
 network-manager-applet
+-kernel
+-kernel-devel
+-kernel-tools-libs
+-kernel-tools
+-kernel-headers
 %end
 
 %post --nochroot 
