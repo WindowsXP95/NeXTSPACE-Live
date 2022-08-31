@@ -1,5 +1,5 @@
 #!/bin/bash
-# nxspce build script v2
+# nxspce build script v2.1
 # 2022 The NextSpace OS Project
 
 buildopt='Select an option to build an image: '
@@ -8,13 +8,13 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Build Stable")
-            echo "Building Stable"
+            echo "Building Stable release"
             echo ""
             livecd-creator --config /NeXTSPACE-OS/release/stable/nextspace.ks --title "nxt" --fslabel "nextspaceos_rel_stable"
             break
             ;;
         "Build Beta")
-            echo "Building beta"
+            echo "Building Beta release"
             echo ""
 	    livecd-creator --config /NeXTSPACE-OS/release/beta/nextspace.ks --title "nxtbeta" --fslabel "nextspaceos_rel_beta"
             break
