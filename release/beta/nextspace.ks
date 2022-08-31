@@ -87,7 +87,7 @@ EOF
 # hostname
 cat << EOF > /etc/sysconfig/network
 NETWORKING=yes
-HOSTNAME=nxtspaceos.local
+HOSTNAME=nextspaceos.local
 NETWORKWAIT=1
 EOF
 
