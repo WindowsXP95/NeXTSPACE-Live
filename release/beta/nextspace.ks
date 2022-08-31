@@ -10,7 +10,7 @@ timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --enable
 #rootpw --plaintext ppc
-firstboot --enable
+#firstboot --enable
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
