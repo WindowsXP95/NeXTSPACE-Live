@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.1.0b_r25
+# version=1.1.0b_r28
 
 lang en_US.UTF-8
 firewall --disabled
@@ -10,7 +10,7 @@ timezone US/Eastern
 auth --useshadow --passalgo=sha512
 selinux --disabled
 rootpw --plaintext ppc
-firstboot --enable
+firstboot --disable
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -47,6 +47,8 @@ wayland-protocols-devel
 xorg-x11-xbitmaps
 xorg-x11-drv-evdev
 pulseaudio
+gnome-software
+dbus-x11
 alsa-plugins-pulseaudio
 plymouth
 grub2-efi-modules
@@ -60,24 +62,7 @@ syslinux
 firefox
 emacs
 gimp
-hfsplus-tools
 network-manager-applet
--kernel
--kernel-devel
--kernel-tools-libs
--kernel-tools
--kernel-headers
--abrt-libs
--abrt-tui
--abrt-cli
--abrt
--abrt-addon-python
--abrt-addon-ccpp
--abrt-addon-kerneloops
-xorg-x11-drv-ati-firmware
--zd1211-firmware
--fprintd-pam
--intltool
 %end
 
 %post --nochroot 
@@ -102,12 +87,12 @@ EOF
 # hostname
 cat << EOF > /etc/sysconfig/network
 NETWORKING=yes
-HOSTNAME=nextspaceos.local
+HOSTNAME=nxtspaceos.local
 NETWORKWAIT=1
 EOF
 
 # Extra packages and repos
-yum -y install vim nano indent ImageMagick gawk hfsplus-tools
+yum -y install vim nano indent ImageMagick gawk
 
 yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -140,7 +125,7 @@ yum -y install xorg-x11-apps neofetch dbus-x11
 
 
 
-# 0.91 pkgs
+# NextSpace v0.91 pkgs
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/pkgs/0.91_testing/NSUser/libdispatch-5.4.2-1.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/pkgs/0.91_testing/NSUser/libcorefoundation-5.4.2-0.el7.x86_64.rpm
 yum -y install https://github.com/WindowsXP95/NeXTSPACE-OS/raw/master/NS/pkgs/0.91_testing/NSUser/libobjc2-2.1-0.el7.x86_64.rpm

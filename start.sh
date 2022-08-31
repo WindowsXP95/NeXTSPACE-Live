@@ -1,5 +1,6 @@
 #!/bin/bash
 # 2022 The NextSpace OS Project
+# Start script v1.1a
 
 docker build -t nextspace-testing .
 docker create  -v /dev:/dev --privileged=true -ti  --name nextspace-testing nextspace-testing:latest
