@@ -8,7 +8,7 @@ firewall --disabled
 keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
-selinux --enabled
+selinux --enable
 #rootpw --plaintext ppc
 firstboot --enabled
 
