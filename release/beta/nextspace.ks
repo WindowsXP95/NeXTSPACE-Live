@@ -8,9 +8,9 @@ firewall --disabled
 keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
-selinux --enable
+selinux --enabled
 #rootpw --plaintext ppc
-#firstboot --enable
+firstboot --enabled
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
