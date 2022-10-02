@@ -2,7 +2,7 @@
 # 2022 The NextSpace OS Project
 # Start script v1.1a
 
-docker build -t nextspace-testing .
+docker build -t nextspace-testing . -f Dockerfile
 docker create  -v /dev:/dev --privileged=true -ti  --name nextspace-testing nextspace-testing:latest
 docker start nextspace-testing
 docker exec -w / -it nextspace-testing git clone https://github.com/WindowsXP95/NeXTSPACE-OS.git
