@@ -1,5 +1,5 @@
 #!/bin/bash
-# nxspce build script v2.1a
+# nxtspce build script v2.1b
 # 2022 The NextSpace OS Project
 
 buildopt='Select an option to build an image: '
