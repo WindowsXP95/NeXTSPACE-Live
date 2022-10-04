@@ -36,7 +36,6 @@ anaconda
 @anaconda-tools
 xorg-x11-fonts-75dpi
 xterm
-@x11
 mesa-libGLES
 tigervnc-server
 xorg-x11-drv-keyboard
