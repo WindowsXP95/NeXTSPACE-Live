@@ -13,7 +13,7 @@ eula --agreed
 
 # Repos
 #repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
-repo --name=epel-release --baseurl=https://dl.fedoraproject.org/pub/epel/8/x86_64/ --install
+#repo --name=epel-release --baseurl=https://dl.fedoraproject.org/pub/epel/8/x86_64/ --install
 repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el8/x86_64/ --install
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el8/x86_64/ --install
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el8/x86_64/ --install
