@@ -4,7 +4,7 @@
 
 docker build -t nextspace-build -f Dockerfile .
 docker create  -v /dev:/dev --privileged=true -ti  --name nextspace-build nextspace-build:latest
-docker start nextspace-testing
+docker start nextspace-build
 docker exec -w / -it nextspace-build git clone https://github.com/WindowsXP95/NeXTSPACE-OS.git
 docker exec -w /NeXTSPACE-OS -it nextspace-build sh /NeXTSPACE-OS/build/build.sh
 docker cp nextspace-build:/NeXTSPACE-OS/nextspaceos_rel.iso ~/nextspaceos_rel-$(date +"%Y%m%d").iso
