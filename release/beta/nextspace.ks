@@ -1,14 +1,15 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.2.0a_r2
+# version=1.2.0a_r8
 
 lang en_US.UTF-8
 firewall --disabled
 keyboard us
 timezone US/Eastern
 auth --useshadow --passalgo=sha512
-selinux --disabled
+selinux --permissive
+eula --agreed
 
 # Repos
 repo --name=centos-7 --mirrorlist=http://mirrorlist.centos.org/?release=7&repo=os&arch=x86_64
@@ -205,4 +206,9 @@ passwd -d NSUser > /dev/null
 /sbin/groupadd storage
 passwd -d $(whoami) > /dev/null
 chmod +x /etc/rc.d/rc.local
+/usr/bin/rsync -a /etc/skel/ /Users/NSUser/
+/bin/chown -R NSUser:NSUser /Users/NSUser/
+
+#SELinux contexts
+/usr/sbin/restorecon -R /Users 2>&1 > /dev/null
 %end
