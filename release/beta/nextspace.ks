@@ -1,7 +1,7 @@
 # 2020 nicktelindert
 # 2022 The NextSpaceOS Project (WindowsXP95)
 # NextSpaceOS kickstart file
-# version=1.2.0a_r8
+# version=1.2.0a_r10
 
 lang en_US.UTF-8
 firewall --disabled
@@ -34,7 +34,6 @@ git
 sudo
 anaconda
 @anaconda-tools
-@legacy-x
 xorg-x11-fonts-75dpi
 xterm
 @x11
