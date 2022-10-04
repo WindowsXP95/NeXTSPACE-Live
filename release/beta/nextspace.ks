@@ -61,6 +61,7 @@ syslinux
 firefox
 emacs
 gimp
+rsync
 network-manager-applet
 -kernel
 -kernel-devel
