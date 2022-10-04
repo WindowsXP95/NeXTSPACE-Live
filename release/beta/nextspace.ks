@@ -22,6 +22,7 @@ user --name=me --groups=wheel,audio --homedir=/Users/me --shell=/bin/zsh --passw
 # SELinux Mode
 selinux --permissive
 # CentOS Repo
+repo --name=centos-7 --mirrorlist=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os
 url --url=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os
 %packages
 # Minimal Installation
