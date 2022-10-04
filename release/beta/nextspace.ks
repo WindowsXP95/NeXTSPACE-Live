@@ -18,10 +18,10 @@ repo --name=elrepo --baseurl=https://elrepo.org/linux/elrepo/el8/x86_64/ --insta
 repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el8/x86_64/ --install
 repo --name=elrepo-release --baseurl=http://elrepo.org/linux/elrepo/el8/x86_64/ --install
 repo --name=elrepo-extras --baseurl=http://elrepo.org/linux/extras/el8/x86_64/ --install
-repo --name=centosplus --baseurl=http://mirror.centos.org/centos/7/centosplus/$basearch/ --install
+repo --name=centosplus --baseurl=http://mirror.centos.org/centos/8/centosplus/$basearch/ --install
 #repo --name=centosextras --baseurl=http://mirror.centos.org/centos/7/extras/$basearch/ --install
 
-repo --name=centos-8 --mirrorlist=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os
+repo --name=centos-8 --baseurl=http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os
 
 %packages
 @Core
